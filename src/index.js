@@ -18,8 +18,6 @@ const onRedirectCallback = appState => {
   );
 };
 
-const Auth0_redirect_base_URL = process.env.BASE_URL;
-
 ReactDOM.render(
   <App />, document.getElementById('root')
 );
