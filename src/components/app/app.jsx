@@ -7,6 +7,10 @@ import {
   Redirect,
   useRouteMatch,
 } from 'react-router-dom';
+import Landing from '../landing/landing.jsx';
+import Listing from '../listing/listing.jsx';
+import Hosts from '../hosts/hosts.jsx';
+import history from "../../utils/history";
 
 import style from './style.css';
 
@@ -15,7 +19,21 @@ const App = () => {
   const [ paywall, setPaywall ] = useState(false);
 
   return (
-    <div>hi!</div>
+    <div>
+      <Router history={history}>
+        <Switch>
+          <Route path="/landing">
+            <Landing/>
+          </Route>
+          <Route path="/listing">
+            <Listing/>
+          </Route>
+          <Route path="/hosts">
+            <Hosts/>
+          </Route>
+        </Switch>
+      </Router>
+    </div>
   );
 };
 

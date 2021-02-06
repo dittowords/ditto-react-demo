@@ -6,6 +6,7 @@
     "@babel/preset-react": "^7.12.13",
     "babel": "^6.23.0",
     "babel-loader": "^8.2.2",
+    "classnames": "^2.2.6",
     "css-loader": "^0.28.11",
     "cssnano": "^4.0.0",
     "dotenv": "^8.2.0",
