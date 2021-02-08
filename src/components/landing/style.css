@@ -1,0 +1,18 @@
+.hero {
+  height: 90vh;
+  background-image: url("../../../img/hero.jpg");
+
+  & .nav {
+    display: flex;
+    background-color: red;
+
+    & .links {
+      margin: 0 auto;
+      display: flex;
+
+      & div {
+        margin: 0 20px;
+      }
+    }
+  }
+}
