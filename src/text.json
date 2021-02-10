@@ -1,0 +1,172 @@
+{
+  "project_name": "Dittobnb",
+  "frames": {
+    "landing_header": {
+      "frameName": "Hero",
+      "blocks": {
+        "navigation": {
+          "nav_link": { "text": "Places to stay", "tags": ["TOP_NAV", "CATEGORY"] },
+          "text_601cc35c5be42cc3f6f8ac55": { "text": "Experiences", "tags": ["TOP_NAV", "CATEGORY"] },
+          "text_601cc35c5be42cc3f6f8ac51": { "text": "Online Experiences", "tags": ["TOP_NAV", "CATEGORY"] },
+          "become_a_host": { "text": "Become a host" }
+        },
+        "hero": { "hero_h1": { "text": "Go Anywhere", "tags": ["H1"] }, "hero_subtext": { "text": "Book unique places to stay and things to do.", "tags": ["SUBTEXT"] }, "hero_cta": { "text": "Explore stays", "tags": ["CTA"] } },
+        "search": {
+          "text_601cc35c5be42cc3f6f8ac49": { "text": "Location", "tags": ["LABEL"] },
+          "text_601cc35c5be42cc3f6f8ac4b": { "text": "Where are you going?", "tags": ["SUBTEXT"] },
+          "text_601cc35c5be42cc3f6f8ac4d": { "text": "Check in", "tags": ["LABEL"] },
+          "text_601cc35c5be42cc3f6f8ac47": { "text": "Add dates", "tags": ["SUBTEXT"] },
+          "text_601cc35c5be42cc3f6f8ac4a": { "text": "Check out", "tags": ["LABEL"] },
+          "text_601cc35c5be42cc3f6f8ac48": { "text": "Add dates", "tags": ["SUBTEXT"] },
+          "text_601cc35c5be42cc3f6f8ac4e": { "text": "Guests", "tags": ["LABEL"] },
+          "text_601cc35c5be42cc3f6f8ac4f": { "text": "Add guests", "tags": ["SUBTEXT"] }
+        }
+      },
+      "otherText": { "text_601cc3f55be42cc3f6f8ad30": { "text": "dittobnb" } }
+    },
+    "landing_body": {
+      "frameName": "Body",
+      "blocks": {
+        "home_types": {
+          "text_601cc35c5be42cc3f6f8ac54": { "text": "Live anywhere", "tags": ["H2"] },
+          "text_601cc35c5be42cc3f6f8ac56": { "text": "Entire homes" },
+          "text_601cc35c5be42cc3f6f8ac57": { "text": "Cabins and cottages" },
+          "text_601cc35c5be42cc3f6f8ac58": { "text": "Unique stays" },
+          "text_601cc35c5be42cc3f6f8ac59": { "text": "Pets welcome" }
+        },
+        "online_experiences": {
+          "text_601cc35c5be42cc3f6f8ac5a": { "text": "Online Experiences", "tags": ["H2"] },
+          "text_601cc35c5be42cc3f6f8ac5b": { "text": "Explore all", "tags": ["CTA"] },
+          "text_601cc35c5be42cc3f6f8ac62": { "text": "Try cooking with farm-to-table chefs", "tags": ["EXAMPLE"] },
+          "text_601cc35c5be42cc3f6f8ac61": { "text": "Learn photography and photo editing from industry pros", "tags": ["EXAMPLE"] },
+          "text_601cc35c5be42cc3f6f8ac63": { "text": "Experience stovetop tricks from famed hibachi artists", "tags": ["EXAMPLE"] },
+          "text_601cc35c5be42cc3f6f8ac60": { "text": "Attend a live personal concert by local garage bands ", "tags": ["EXAMPLE"] }
+        },
+        "hosting": {
+          "text_601cc35c5be42cc3f6f8ac50": { "text": "Join dozens of hosts on Dittobnb", "tags": ["H2"] },
+          "text_601cc35c5be42cc3f6f8ac5c": { "text": "Interactive activities you can do together, led by expert hosts", "tags": ["SUBTEXT"] },
+          "text_601cc35c5be42cc3f6f8ac5d": { "text": "Host your home", "tags": ["CATEGORY"] },
+          "text_601cc35c5be42cc3f6f8ac5e": { "text": "Host an Experience", "tags": ["CATEGORY"] },
+          "text_601cc35c5be42cc3f6f8ac5f": { "text": "Host an Online Experience", "tags": ["CATEGORY"] }
+        }
+      },
+      "otherText": {}
+    },
+    "footer": {
+      "frameName": "Footer",
+      "blocks": {
+        "about": {
+          "text_601cc35c5be42cc3f6f8ac64": { "text": "ABOUT", "tags": ["FOOTER_HEADER"] },
+          "text_601cc35c5be42cc3f6f8ac73": { "text": "Company", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac75": { "text": "Press", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac76": { "text": "Blog", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac77": { "text": "Careers", "tags": ["LINK"] }
+        },
+        "community": {
+          "text_601cc35c5be42cc3f6f8ac65": { "text": "COMMUNITY", "tags": ["FOOTER_HEADER"] },
+          "text_601cc35c5be42cc3f6f8ac71": { "text": "Accessibility", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac70": { "text": "Guest community", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac74": { "text": "Invite friends", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac72": { "text": "Share your stay", "tags": ["LINK"] }
+        },
+        "host": {
+          "text_601cc35c5be42cc3f6f8ac66": { "text": "HOST", "tags": ["FOOTER_HEADER"] },
+          "text_601cc35c5be42cc3f6f8ac6a": { "text": "Host your home", "tags": ["CATEGORY", "LINK"] },
+          "text_601cc35c5be42cc3f6f8ac6c": { "text": "Host an Experience", "tags": ["CATEGORY", "LINK"] },
+          "text_601cc35c5be42cc3f6f8ac6d": { "text": "Host an Online Experience", "tags": ["CATEGORY", "LINK"] },
+          "text_601cc35c5be42cc3f6f8ac6e": { "text": "Refer hosts", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac6f": { "text": "Host resources", "tags": ["LINK"] }
+        },
+        "support": {
+          "text_601cc35c5be42cc3f6f8ac67": { "text": "SUPPORT", "tags": ["FOOTER_HEADER"] },
+          "text_601cc35c5be42cc3f6f8ac68": { "text": "Help Center", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac69": { "text": "Trust and Safety", "tags": ["LINK"] },
+          "text_601cc35c5be42cc3f6f8ac6b": { "text": "Cancellation Options", "tags": ["LINK"] }
+        }
+      },
+      "otherText": {}
+    },
+    "listing_app": {
+      "frameName": "App",
+      "blocks": {
+        "booking": {
+          "text_601cc35d5be42cc3f6f8ac82": { "text": "Check in" },
+          "text_601cc35d5be42cc3f6f8ac81": { "text": "Add dates" },
+          "text_601cc35d5be42cc3f6f8ac84": { "text": "Check out" },
+          "text_601cc35d5be42cc3f6f8ac86": { "text": "Add dates" },
+          "text_601cc35d5be42cc3f6f8ac85": { "text": "Guests" },
+          "text_601cc35d5be42cc3f6f8ac87": { "text": "Add guests" },
+          "text_601cc35d5be42cc3f6f8ac88": { "text": "Check Availbility", "tags": ["CTA"] }
+        },
+        "amenities": {
+          "text_601cc35d5be42cc3f6f8ac89": { "text": "Entire home" },
+          "text_601cc35d5be42cc3f6f8ac8a": { "text": "You’ll have the house to yourself." },
+          "text_601cc35d5be42cc3f6f8ac8c": { "text": "Pool" },
+          "text_601cc35d5be42cc3f6f8ac8b": { "text": "This stay has a pool for its guests." },
+          "text_601cc35d5be42cc3f6f8ac8d": { "text": "Anytime cancellation" },
+          "text_601cc35d5be42cc3f6f8ac8e": { "text": "You can cancel at any point before your trip." },
+          "text_601cc35d5be42cc3f6f8ac8f": { "text": "Work friendly" },
+          "text_601cc35d5be42cc3f6f8ac90": { "text": "This stay has wifi and workspace accomodations." }
+        },
+        "ratings": {
+          "text_601cc35d5be42cc3f6f8ac9b": { "text": "Communication" },
+          "text_601cc35d5be42cc3f6f8ac9c": { "text": "Location" },
+          "text_601cc35d5be42cc3f6f8ac9f": { "text": "Value" },
+          "text_601cc35d5be42cc3f6f8ac9d": { "text": "Accuracy" },
+          "text_601cc35d5be42cc3f6f8ac9e": { "text": "Check-in" },
+          "text_601cc35d5be42cc3f6f8ac9a": { "text": "Cleanliness" }
+        },
+        "other_options": { "text_601cc35d5be42cc3f6f8aca0": { "text": "Explore other options nearby" }, "text_601cc35d5be42cc3f6f8aca1": { "text": "Apartments • Houses • Lofts • Barns • Spaceships" } }
+      },
+      "otherText": {
+        "text_601cc35c5be42cc3f6f8ac78": { "text": "Become a host" },
+        "text_601cc35c5be42cc3f6f8ac79": { "text": "dittobnb" },
+        "text_601cc35c5be42cc3f6f8ac7a": { "text": "Bright and Spacious Modern Villa" },
+        "text_601cc35d5be42cc3f6f8ac7b": { "text": "Entire house hosted by Earl" },
+        "text_601cc35d5be42cc3f6f8ac7c": { "text": "Smallville, California, United States" },
+        "text_601cc35d5be42cc3f6f8ac7d": { "text": "4.7 (12)" },
+        "text_601cc35d5be42cc3f6f8ac7e": { "text": "Superhost" },
+        "text_601cc35d5be42cc3f6f8ac7f": { "text": "Start your search" },
+        "text_601cc35d5be42cc3f6f8ac80": { "text": "4.7 (12)" },
+        "text_601cc35d5be42cc3f6f8ac83": { "text": "$148 / night" },
+        "text_601cc35d5be42cc3f6f8ac92": { "text": "Show all photos", "tags": ["CTA"] },
+        "text_601cc35d5be42cc3f6f8ac93": { "text": "5.0" },
+        "text_601cc35d5be42cc3f6f8ac94": { "text": "5.0" },
+        "text_601cc35d5be42cc3f6f8ac95": { "text": "4.7 (12 Reviews)" },
+        "text_601cc35d5be42cc3f6f8ac96": { "text": "5.0" },
+        "text_601cc35d5be42cc3f6f8ac97": { "text": "5.0" },
+        "text_601cc35d5be42cc3f6f8ac98": { "text": "5.0" },
+        "text_601cc35d5be42cc3f6f8ac99": { "text": "5.0" },
+        "text_601cc35d5be42cc3f6f8ac91": { "text": "4 guests • 2 bedrooms • 2 beds • 1 bath" }
+      }
+    },
+    "hosts_hero": {
+      "frameName": "Hosts Hero",
+      "blocks": {
+        "hero": {
+          "text_601cc35d5be42cc3f6f8aca3": { "text": "Host your home on Dittobnb", "tags": ["H1"] },
+          "text_601cc35d5be42cc3f6f8aca4": { "text": "Join a vibrant community of hosts, create memorble experiences for travelers, and earn money to pursue the things you love. ", "tags": ["SUBTEXT"] },
+          "text_601cc35d5be42cc3f6f8aca6": { "text": "Get Started", "tags": ["CTA"] },
+          "text_601cc35d5be42cc3f6f8aca5": { "text": "Learn about our host community", "notes": "Link to host interview signups" }
+        }
+      },
+      "otherText": { "text_601cc35d5be42cc3f6f8aca2": { "text": "dittobnb" } }
+    },
+    "hosts_blurb": {
+      "frameName": "Hosts Blurb",
+      "blocks": {
+        "passion": {
+          "text_601cc35d5be42cc3f6f8aca9": { "text": "SEE WHAT’S POSSIBLE", "tags": ["SUBHEADER"], "notes": "All caps above header" },
+          "text_601cc35d5be42cc3f6f8aca8": { "text": "Share your passion for hospitality—become a host", "tags": ["H2"] },
+          "text_601cc35d5be42cc3f6f8acaa": { "text": "Create a listing that fits your hosting style—we'll give you tips to make your place shine. Start now and finish any time.", "tags": ["SUBTEXT"] }
+        },
+        "ready_to_host": {
+          "text_601cc35d5be42cc3f6f8aca7": { "text": "Ready to host?", "tags": ["H2"] },
+          "text_601cc35d5be42cc3f6f8acab": { "text": "Dittobnb hosts get to share their experiences, perspectives, and spaces with travelers across the world.", "tags": ["SUBTEXT"] },
+          "text_601cc35d5be42cc3f6f8acac": { "text": "Get Started", "tags": ["CTA"] }
+        }
+      },
+      "otherText": {}
+    }
+  }
+}
