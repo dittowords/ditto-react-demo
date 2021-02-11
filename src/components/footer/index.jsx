@@ -11,10 +11,12 @@ const Footer = ({}) => {
     >
       {( frame ) => {
         return Object.keys(frame.blocks).map((blockId) => (
-          <div className={style.footerCol}>
+          <div className={style.footerCol} key={blockId}>
             {
               Object.keys(frame.blocks[blockId]).map((textId) => (
-                <div className={style.link}>{frame.blocks[blockId][textId].text}</div>
+                <div className={style.link} key={textId}>
+                  {frame.blocks[blockId][textId].text}
+                </div>
               ))
             }
 

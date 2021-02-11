@@ -23,7 +23,7 @@ const Landing = ({}) => {
             >
               {( block ) => {
                 return Object.keys(block).map((id) => (
-                  <div className={style.link}>{block[id]}</div>
+                  <div className={style.link} key={block[id]}>{block[id]}</div>
                 ));
               }}
             </Ditto>
