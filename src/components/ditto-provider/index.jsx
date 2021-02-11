@@ -7,24 +7,29 @@ import React, {
 
 export const DittoContext = createContext({});
 
-export const useDitto = (frameId, blockId, textId, filters) => {
+const useDittoSingleText = (textId) => {
+  const copy = useContext(DittoContext);
+
+  for (var frameId in copy.frames) {
+    for (var blockId in copy.frames[frameId].blocks) {
+      if (textId in copy.frames[frameId].blocks[blockId]) {
+        return copy.frames[frameId].blocks[blockId][textId].text;
+      }
+    }
+    if (
+      copy.frames[frameId].other_text &&
+      textId in copy.frames[frameId].other_text
+    ) {
+      return copy.frames[frameId].other_text[textId].text;
+    }
+  }
+}
+const useDitto = (frameId, blockId, textId, filters) => {
   const copy = useContext(DittoContext);
 
   // textId only
   if (textId && !blockId && !frameId) {
-    for (var frameId in copy.frames) {
-      for (var blockId in copy.frames[frameId].blocks) {
-        if (textId in copy.frames[frameId].blocks[blockId]) {
-          return copy.frames[frameId].blocks[blockId][textId];
-        }
-      }
-      if (
-        copy.frames[frameId].other_text &&
-        textId in copy.frames[frameId].other_text
-      ) {
-        return copy.frames[frameId].other_text[textId];
-      }
-    }
+    return useDittoSingleText(textId);
   }
 
   // frameId only
@@ -33,21 +38,19 @@ export const useDitto = (frameId, blockId, textId, filters) => {
     return frame;
   }
   if (frameId && blockId && !textId) {
-    const block = copy.frames[frameId].blocks[blockId];
-    if (filters && filters.tags) {
-      const filtered = Object.keys(block).filter(textId => {
-        //filter so only text items that have all of the tags in filters
-        return filters.tags.every(tag => (
-          block[textId].tags &&
-          block[textId].tags.includes(tag)
-        ));
-      }).reduce((obj, id) => {
-        obj[id] = block[id];
-        return obj;
-      }, {});
+    const raw_block = copy.frames[frameId].blocks[blockId];
+    const block = Object.keys(raw_block).filter(textId => {
+      if (!filters) return true;
+      //filter so only text items that have all of the tags in filters
+      return filters.tags.every(tag => (
+        raw_block[textId].tags &&
+        raw_block[textId].tags.includes(tag)
+      ));
+    }).reduce((obj, id) => {
+      obj[id] = raw_block[id].text;
+      return obj;
+    }, {});
 
-      return filtered;
-    }
     return block;
   }
 
@@ -56,12 +59,13 @@ export const useDitto = (frameId, blockId, textId, filters) => {
 }
 
 export const Ditto = ({
-  children,
+  children = null,
   frameId = null,
   blockId = null,
   textId = null,
   filters = null
 }) => {
+  if (!children && textId) return useDitto(frameId, blockId, textId, filters)
   return children(useDitto(frameId, blockId, textId, filters))
 }
 

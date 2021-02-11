@@ -22,7 +22,7 @@ const Landing = ({}) => {
             >
               {( block ) => {
                 return Object.keys(block).map((id) => (
-                  <div className={style.link}>{block[id].text}</div>
+                  <div className={style.link}>{block[id]}</div>
                 ));
               }}
             </Ditto>
@@ -35,18 +35,16 @@ const Landing = ({}) => {
               hero_h1, hero_subtext, hero_cta
             }) => (
               <div>
-                <h1>{hero_h1.text}</h1>
-                <h2>{hero_subtext.text}</h2>
-                <button>{hero_cta.text}</button>
+                <h1>{hero_h1}</h1>
+                <h2>{hero_subtext}</h2>
+                <button>{hero_cta}</button>
               </div>
             )}
           </Ditto>
         </div>
       </div>
       <div className={classnames(style.section, style.light)}>
-        <Ditto textId="text_601cc35c5be42cc3f6f8ac54">
-          { ({text}) => (<h2>{text}</h2>) }
-        </Ditto>
+        <h2><Ditto textId="text_601cc35c5be42cc3f6f8ac54"/></h2>
 
       </div>
       <div className={classnames(style.section, style.dark)}>
