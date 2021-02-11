@@ -3,7 +3,15 @@ import classnames from 'classnames';
 import style from './style.css';
 import logo from "../../img/logo.png";
 
+import DittoProvider, { Ditto, useDitto} from '../ditto-provider';
+
 const Landing = ({}) => {
+
+  const testCopy = {
+    "wow": {
+      "textId": "whatsup!"
+    }
+  };
 
   return <div>
     <div className={style.header}>
@@ -24,6 +32,16 @@ const Landing = ({}) => {
         <h2>Book unique places to stay and things to do.</h2>
         <button>Explore stays</button>
       </div>
+    </div>
+    <div>
+    here
+      <DittoProvider source={testCopy}>
+        <Ditto id="wow">
+          {({ textId }) =>
+            (<div>{textId}</div>)
+          }
+        </Ditto>
+      </DittoProvider>
     </div>
   </div>
 }
