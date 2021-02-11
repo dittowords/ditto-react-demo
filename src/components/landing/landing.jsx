@@ -15,37 +15,43 @@ const Landing = ({}) => {
   };
 
   return <div>
-    <div className={style.header}>
-      <div className={style.nav}>
-        <div className={style.logo}>
-          <img src={logo}/>
+    <DittoProvider source={source}>
+      <div className={style.header}>
+        <div className={style.nav}>
+          <div className={style.logo}>
+            <img src={logo}/>
+          </div>
+          <div className={style.links}>
+            <div className={style.link}>Places to stay</div>
+            <div className={style.link}>Experiences</div>
+            <div className={style.link}>Online Experiences</div>
+          </div>
+          <div>Become a host</div>
         </div>
-        <div className={style.links}>
-          <div className={style.link}>Places to stay</div>
-          <div className={style.link}>Experiences</div>
-          <div className={style.link}>Online Experiences</div>
+        <div className={style.hero}>
+          <Ditto frameId="landing_header" blockId="hero">
+            {({
+              hero_h1, hero_subtext, hero_cta
+            }) => (
+              <div>
+                <h1>{hero_h1.text}</h1>
+                <h2>{hero_subtext.text}</h2>
+                <button>{hero_cta.text}</button>
+              </div>
+            )}
+          </Ditto>
         </div>
-        <div>Become a host</div>
       </div>
-
-      <div className={style.hero}>
-        <h1>Go Anywhere</h1>
-        <h2>Book unique places to stay and things to do.</h2>
-        <button>Explore stays</button>
-      </div>
-    </div>
-    <div>
-      <DittoProvider source={source}>
+      <div>
         <Ditto frameId="landing_header" blockId="navigation">
           {( block ) => {
-            console.log('block', block)
             return Object.keys(block).map((id) => (
               <div>{block[id].text}</div>
             ));
           }}
         </Ditto>
-      </DittoProvider>
-    </div>
+      </div>
+    </DittoProvider>
   </div>
 }
 

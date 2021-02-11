@@ -20,7 +20,6 @@ export const useDitto = (frameId, blockId, textId) => {
 
 export const Ditto = ({
   children,
-  repeat,
   frameId = null,
   blockId = null,
   textId = null,
