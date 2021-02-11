@@ -7,7 +7,7 @@ import source from "../../text.json";
 import DittoProvider, { Ditto } from '../ditto-provider';
 
 const Landing = ({}) => {
-  return <div>
+  return <div className={style.body}>
     <DittoProvider source={source}>
       <div className={style.header}>
         <div className={style.nav}>
@@ -43,8 +43,16 @@ const Landing = ({}) => {
           </Ditto>
         </div>
       </div>
-      <div>
-        rest of the page
+      <div className={classnames(style.section, style.light)}>
+        <Ditto textId="text_601cc35c5be42cc3f6f8ac54">
+          { ({text}) => (<h2>{text}</h2>) }
+        </Ditto>
+
+      </div>
+      <div className={classnames(style.section, style.dark)}>
+        <h2>Live anywhere</h2>
+        rest of the pagedsfdsf
+
       </div>
     </DittoProvider>
   </div>
