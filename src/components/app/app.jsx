@@ -15,7 +15,6 @@ import history from "../../utils/history";
 import style from './style.css';
 
 const App = () => {
-  console.log('app loaded!');
   const [ paywall, setPaywall ] = useState(false);
 
   return (

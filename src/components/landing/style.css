@@ -1,18 +1,66 @@
-.hero {
+.header {
   height: 90vh;
-  background-image: url("../../../img/hero.jpg");
+  background-image: url("../../img/hero.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
 
   & .nav {
+    padding: 36px 0;
     display: flex;
-    background-color: red;
+    align-items: center;
+
+    & .logo img {
+      max-height: 30px;
+    }
 
     & .links {
       margin: 0 auto;
       display: flex;
 
-      & div {
+      & .link {
         margin: 0 20px;
+        font-weight: 500;
+        font-size: 16px;
       }
+    }
+  }
+
+  & .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+
+    width: 50%;
+    margin-right: auto;
+    /* background-color: yellow; */
+
+    & h1 {
+      color: white;
+      font-weight: 900;
+      font-size: 100px;
+      line-height: 85%;
+    }
+    & h2 {
+      font-size: 36px;
+      color: white;
+      font-weight: bold;
+      margin: 24px 0;
+    }
+    & button {
+      background-color: white;
+      padding: 12px 16px;
+      width: 200px;
+      border: none;
+
+      color: black;
+      font-weight: bold;
+      font-size: 22px;
+      border-radius: 12px;
+      text-align: center;
     }
   }
 }
