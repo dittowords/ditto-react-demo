@@ -28,16 +28,16 @@ const useDitto = (frameId, blockId, textId, filters) => {
   const copy = useContext(DittoContext);
 
   // textId only
-  if (textId && !blockId && !frameId) {
+  if (textId) {
     return useDittoSingleText(textId);
   }
 
   // frameId only
-  if (frameId && !blockId && !textId) {
+  if (frameId && !blockId) {
     const frame = copy.frames[frameId];
     return frame;
   }
-  if (frameId && blockId && !textId) {
+  if (frameId && blockId) {
     const raw_block = copy.frames[frameId].blocks[blockId];
     const block = Object.keys(raw_block).filter(textId => {
       if (!filters) return true;
