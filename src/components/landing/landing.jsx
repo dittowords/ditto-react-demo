@@ -4,16 +4,9 @@ import style from './style.css';
 import logo from "../../img/logo.png";
 import source from "../../text.json";
 
-import DittoProvider, { Ditto, useDitto} from '../ditto-provider';
+import DittoProvider, { Ditto } from '../ditto-provider';
 
 const Landing = ({}) => {
-
-  const testCopy = {
-    "wow": {
-      "textId": "whatsup!"
-    }
-  };
-
   return <div>
     <DittoProvider source={source}>
       <div className={style.header}>
@@ -22,9 +15,17 @@ const Landing = ({}) => {
             <img src={logo}/>
           </div>
           <div className={style.links}>
-            <div className={style.link}>Places to stay</div>
-            <div className={style.link}>Experiences</div>
-            <div className={style.link}>Online Experiences</div>
+            <Ditto
+              frameId="landing_header"
+              blockId="navigation"
+              filters={{ tags: ["TOP_NAV"]}}
+            >
+              {( block ) => {
+                return Object.keys(block).map((id) => (
+                  <div className={style.link}>{block[id].text}</div>
+                ));
+              }}
+            </Ditto>
           </div>
           <div>Become a host</div>
         </div>
@@ -43,13 +44,7 @@ const Landing = ({}) => {
         </div>
       </div>
       <div>
-        <Ditto frameId="landing_header" blockId="navigation">
-          {( block ) => {
-            return Object.keys(block).map((id) => (
-              <div>{block[id].text}</div>
-            ));
-          }}
-        </Ditto>
+        rest of the page
       </div>
     </DittoProvider>
   </div>

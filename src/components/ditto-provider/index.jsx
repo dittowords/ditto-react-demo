@@ -7,15 +7,33 @@ import React, {
 
 export const DittoContext = createContext({});
 
-export const useDitto = (frameId, blockId, textId) => {
+export const useDitto = (frameId, blockId, textId, filters) => {
   const copy = useContext(DittoContext);
 
   if (frameId && !blockId && !textId) {
-    return copy.frames[frameId];
+    const frame = copy.frames[frameId];
   }
   if (frameId && blockId && !textId) {
-    return copy.frames[frameId].blocks[blockId];
+    const block = copy.frames[frameId].blocks[blockId];
+    if (filters && filters.tags) {
+      //filter so only text items that have all of the tags in filters
+      const filtered = Object.keys(block).filter(textId => {
+        return filters.tags.every(tag => (
+          block[textId].tags &&
+          block[textId].tags.includes(tag)
+        ));
+      }).reduce((obj, id) => {
+        obj[id] = block[id];
+        return obj;
+      }, {});
+
+      return filtered;
+    }
+    return block;
   }
+
+  //TODO: filter by tags
+  //TODO: textId option
 }
 
 export const Ditto = ({
@@ -23,8 +41,9 @@ export const Ditto = ({
   frameId = null,
   blockId = null,
   textId = null,
+  filters
 }) => {
-  return children(useDitto(frameId, blockId, textId))
+  return children(useDitto(frameId, blockId, textId, filters))
 }
 
 const DittoProvider = ({
