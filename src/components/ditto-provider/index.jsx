@@ -7,16 +7,25 @@ import React, {
 
 export const DittoContext = createContext({});
 
-export const useDitto = (id) => {
+export const useDitto = (frameId, blockId, textId) => {
   const copy = useContext(DittoContext);
-  return copy[id];
+
+  if (frameId && !blockId && !textId) {
+    return copy.frames[frameId];
+  }
+  if (frameId && blockId && !textId) {
+    return copy.frames[frameId].blocks[blockId];
+  }
 }
 
 export const Ditto = ({
   children,
-  id
+  repeat,
+  frameId = null,
+  blockId = null,
+  textId = null,
 }) => {
-  return children(useDitto(id))
+  return children(useDitto(frameId, blockId, textId))
 }
 
 const DittoProvider = ({
