@@ -1,6 +1,5 @@
 .header {
   height: 90vh;
-  /* height: 400px; */
   background-image: url("../../img/hero.jpg");
   background-size: cover;
   background-position: center bottom;
@@ -78,6 +77,47 @@
   & .label {
     font-weight: bold;
     font-size: 16px;
+  }
+  & .gallery {
+    display: flex;
+
+    & .card3 {
+      flex-basis: 25%;
+    }
+    & .card4 {
+      flex-basis: 33%;
+    }
+    & .card3:not(:last-child), & .card4:not(:last-child) {
+      margin-right: 30px;
+    }
+    & .img {
+      height: 250px;
+      margin: 15px 0;
+      border-radius: 10px;
+      background-size: cover;
+      background-position: center;
+    }
+    & .liveAnywhere0 {
+      background-image: url("../../img/live_anywhere0.jpeg");
+    }
+    & .liveAnywhere1 {
+      background-image: url("../../img/live_anywhere1.jpeg");
+    }
+    & .liveAnywhere2 {
+      background-image: url("../../img/live_anywhere2.jpeg");
+    }
+    & .liveAnywhere3 {
+      background-image: url("../../img/live_anywhere3.jpeg");
+    }
+    & .hosts0 {
+      background-image: url("../../img/hosts0.jpeg");
+    }
+    & .hosts1 {
+      background-image: url("../../img/hosts1.jpeg");
+    }
+    & .hosts2 {
+      background-image: url("../../img/hosts2.jpeg");
+    }
   }
 }
 .light {

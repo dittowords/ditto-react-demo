@@ -45,7 +45,7 @@ module.exports = (env, argv) => {
           },
         },
         {
-          test: /\.(gif|png|jpg)$/,
+          test: /\.(gif|png|jpg|jpeg)$/,
           loader: 'file-loader',
         },
         {

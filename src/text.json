@@ -36,7 +36,7 @@
         },
         "online_experiences": {
           "text_601cc35c5be42cc3f6f8ac5a": { "text": "Online Experiences", "tags": ["H2"] },
-          "text_601cc35c5be42cc3f6f8ac5b": { "text": "Explore all", "tags": ["CTA"] },
+          "online_exp_cta": { "text": "Explore all", "tags": ["CTA"] },
           "text_601cc35c5be42cc3f6f8ac62": { "text": "Try cooking with farm-to-table chefs", "tags": ["EXAMPLE"] },
           "text_601cc35c5be42cc3f6f8ac61": { "text": "Learn photography and photo editing from industry pros", "tags": ["EXAMPLE"] },
           "text_601cc35c5be42cc3f6f8ac63": { "text": "Experience stovetop tricks from famed hibachi artists", "tags": ["EXAMPLE"] },
