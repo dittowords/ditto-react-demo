@@ -3,6 +3,7 @@ import classnames from 'classnames';
 import style from './style.css';
 import logo from "../../img/logo.png";
 import source from "../../text.json";
+import Footer from '../footer';
 
 import DittoProvider, { Ditto } from '../ditto-provider';
 
@@ -100,6 +101,7 @@ const Landing = ({}) => {
           </div>
         </div>
       </div>
+      <Footer/>
     </DittoProvider>
   </div>
 }

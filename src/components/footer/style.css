@@ -1,0 +1,15 @@
+.footer {
+  padding: 100px 80px;
+  display: flex;
+  background-color: #F7F7F7;
+}
+.footerCol {
+  flex-basis: 25%;
+
+  & .link {
+    margin-bottom: 30px;
+  }
+  & .link:first-child {
+    font-weight: bold;
+  }
+}
