@@ -25,6 +25,7 @@ const useDittoSingleText = (textId) => {
       return copy.frames[frameId].otherText[textId].text;
     }
   }
+  return "";
 }
 const useDitto = (frameId, blockId, textId, filters) => {
   const copy = useContext(DittoContext);

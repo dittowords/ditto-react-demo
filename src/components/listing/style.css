@@ -1,5 +1,5 @@
 .nav {
-  padding: 36px 80px;
+  padding: 36px 200px;
   display: flex;
   align-items: center;
 
@@ -12,9 +12,46 @@
     display: flex;
   }
 }
+.info {
+  margin: 0 200px;
+  & .listing {
+    display: flex;
+
+    & .listingInfo {
+      width: 75%;
+
+      & h3 {
+        font-weight: bold;
+        font-size: 22px;
+        color: #000000;
+      }
+      & .amenity:nth-child(odd) {
+        font-weight: bold;
+        font-size: 18px;
+        color: #000000;
+      }
+
+      & .amenity:nth-child(even) {
+        font-size: 14px;
+        color: #8C8C8C;
+        margin-bottom: 24px;
+      }
+    }
+    & .booking {
+      width: 25%;
+      margin-left: 30px;
+      padding: 20px;
+      border: 1px solid #DADADA;
+      border-radius: 10px;
+    }
+  }
+  & .reviews {
+
+  }
+}
 .otherOptions {
   border-top: 1px solid #DADADA;
-  padding: 60px 80px;
+  padding: 60px 200px;
 
   & h4 {
     font-weight: bold;

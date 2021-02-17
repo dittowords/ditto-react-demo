@@ -22,8 +22,24 @@ const Listing = ({}) => {
         <div className={style.listing}>
           <div className={style.listingInfo}>
             <h3><Ditto textId="text_601cc35d5be42cc3f6f8ac7b"/></h3>
+            <hr/>
+              <Ditto
+                frameId="listing_app"
+                blockId="amenities"
+              >
+                {( block ) => {
+                  return Object.keys(block).map((id) => (
+                    <div className={style.amenity} key={block[id]}>{block[id]}</div>
+                  ));
+                }}
+              </Ditto>
+            <hr/>
           </div>
           <div className={style.booking}>
+            <div>
+              <div>$148/night</div>
+              <div>4.7 (12)</div>
+            </div>
           </div>
         </div>
         <div className={style.reviews}>
