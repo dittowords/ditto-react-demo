@@ -1,0 +1,28 @@
+.nav {
+  padding: 36px 80px;
+  display: flex;
+  align-items: center;
+
+  & .logo img {
+    max-height: 30px;
+  }
+
+  & .links {
+    margin: 0 auto;
+    display: flex;
+  }
+}
+.otherOptions {
+  border-top: 1px solid #DADADA;
+  padding: 60px 80px;
+
+  & h4 {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+  }
+  & div {
+    font-size: 18px;
+    color: #8C8C8C;
+  }
+}

@@ -11,16 +11,18 @@ const useDittoSingleText = (textId) => {
   const copy = useContext(DittoContext);
 
   for (var frameId in copy.frames) {
+    // Look in Blocks
     for (var blockId in copy.frames[frameId].blocks) {
       if (textId in copy.frames[frameId].blocks[blockId]) {
         return copy.frames[frameId].blocks[blockId][textId].text;
       }
     }
+    // Look in otherText
     if (
-      copy.frames[frameId].other_text &&
-      textId in copy.frames[frameId].other_text
+      copy.frames[frameId].otherText &&
+      textId in copy.frames[frameId].otherText
     ) {
-      return copy.frames[frameId].other_text[textId].text;
+      return copy.frames[frameId].otherText[textId].text;
     }
   }
 }
@@ -53,9 +55,6 @@ const useDitto = (frameId, blockId, textId, filters) => {
 
     return block;
   }
-
-  //TODO: filter by status
-  //TODO: textId option
 }
 
 export const Ditto = ({
