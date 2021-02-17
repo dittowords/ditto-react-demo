@@ -19,7 +19,6 @@ const Footer = ({}) => {
                 </div>
               ))
             }
-
           </div>
         ));
       }}

@@ -78,36 +78,56 @@
     font-weight: bold;
     font-size: 16px;
   }
+  & .caption {
+    border-radius: 0 0 10px 10px;
+    background-color: #333;
+    padding: 12px 20px;
+    font-size: 14px;
+  }
   & .gallery {
     display: flex;
+    flex-grow: 1;
 
-    & .card3 {
-      flex-basis: 25%;
+    & .vertical {
+      flex-direction: column;
+      flex-basis: 50%;
+    }
+    & .card1 {
+      width: 100%;
+    }
+    & .card2 {
+      width: 50%;
     }
     & .card4 {
-      flex-basis: 33%;
+      width: 25%;
+    }
+    & .card3 {
+      width: 33%;
     }
     & .card3:not(:last-child), & .card4:not(:last-child) {
       margin-right: 30px;
     }
     & .img {
       height: 250px;
-      margin: 15px 0;
       border-radius: 10px;
       background-size: cover;
       background-position: center;
     }
     & .liveAnywhere0 {
       background-image: url("../../img/live_anywhere0.jpeg");
+      margin: 15px 0;
     }
     & .liveAnywhere1 {
       background-image: url("../../img/live_anywhere1.jpeg");
+      margin: 15px 0;
     }
     & .liveAnywhere2 {
       background-image: url("../../img/live_anywhere2.jpeg");
+      margin: 15px 0;
     }
     & .liveAnywhere3 {
       background-image: url("../../img/live_anywhere3.jpeg");
+      margin: 15px 0;
     }
     & .hosts0 {
       background-image: url("../../img/hosts0.jpeg");
@@ -117,6 +137,36 @@
     }
     & .hosts2 {
       background-image: url("../../img/hosts2.jpeg");
+    }
+    & .onlineexp1 {
+      background-image: url("../../img/onlineexp1.jpeg");
+      margin-right: 30px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    & .onlineexp2 {
+      background-image: url("../../img/onlineexp2.jpeg");
+      margin-right: 15px;
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    & .onlineexp3 {
+      background-image: url("../../img/onlineexp3.jpeg");
+      margin-bottom: 30px;
+      margin-left: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    & .onlineexp4 {
+      background-image: url("../../img/onlineexp4.jpeg");
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
   }
 }
