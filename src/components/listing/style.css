@@ -2,15 +2,14 @@
   padding: 36px 200px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   & .logo img {
     max-height: 30px;
   }
-
-  & .links {
-    margin: 0 auto;
-    display: flex;
-  }
+}
+.images {
+  display: flex;
 }
 .info {
   margin: 0 200px;
@@ -18,7 +17,9 @@
     display: flex;
 
     & .listingInfo {
-      width: 75%;
+      width: 66%;
+      font-size: 14px;
+      color: #8C8C8C;
 
       & h3 {
         font-weight: bold;
@@ -32,17 +33,62 @@
       }
 
       & .amenity:nth-child(even) {
-        font-size: 14px;
-        color: #8C8C8C;
         margin-bottom: 24px;
       }
     }
     & .booking {
-      width: 25%;
+      width: 33%;
       margin-left: 30px;
-      padding: 20px;
-      border: 1px solid #DADADA;
-      border-radius: 10px;
+
+      & .module {
+        padding: 20px;
+        border: 1px solid #DADADA;
+        border-radius: 10px;
+      }
+
+      & .top {
+        display: flex;
+        justify-content: space-between;
+
+        & .price {
+          font-size: 22px;
+          font-weight: bold;
+        }
+      }
+      & .select1 {
+        display: flex;
+        border: 1px solid #DADADA;
+        border-bottom: 0px solid #DADADA;
+        border-radius: 10px 10px 0px 0px;
+        margin-top: 20px;
+
+        & .select {
+          flex-grow: 1;
+          padding: 12px;
+        }
+        & .select:first-child {
+          border-right: 1px solid #DADADA;
+        }
+      }
+      & .select2 {
+        padding: 12px;
+        border: 1px solid #DADADA;
+        border-radius: 0px 0px 10px 10px;
+        margin-bottom: 20px;
+      }
+
+      & button {
+        background-color: #FEBF1C;
+        padding: 12px 0px;
+        width: 100%;
+        border: none;
+
+        color: black;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+        text-align: center;
+      }
     }
   }
   & .reviews {
