@@ -10,6 +10,47 @@
 }
 .images {
   display: flex;
+  margin: 40px 200px;
+
+
+  & .img {
+    flex-grow: 1;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+  }
+  & .grid {
+    width: 50%;
+    & .row {
+      display: flex;
+    }
+  }
+  & .img1 {
+    background-image: url("../../img/listing1.png");
+    width: 50%;
+    margin-right: 30px;
+  }
+  & .img2 {
+    background-image: url("../../img/listing2.jpeg");
+    width: 25%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  & .img3 {
+    background-image: url("../../img/listing3.jpeg");
+    width: 25%;
+    margin-bottom: 30px;
+  }
+  & .img4 {
+    background-image: url("../../img/listing4.jpeg");
+    width: 25%;
+    margin-right: 30px;
+  }
+  & .img5 {
+    background-image: url("../../img/listing5.jpeg");
+    width: 25%;
+  }
 }
 .info {
   margin: 0 200px;

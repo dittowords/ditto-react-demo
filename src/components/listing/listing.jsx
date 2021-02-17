@@ -17,7 +17,17 @@ const Listing = ({}) => {
         <div>Become a host</div>
       </div>
       <div className={style.images}>
-      
+        <div className={classnames(style.img, style.img1)}></div>
+        <div className={style.grid}>
+          <div className={style.row}>
+            <div className={classnames(style.img, style.img2)}></div>
+            <div className={classnames(style.img, style.img3)}></div>
+          </div>
+          <div className={style.row}>
+            <div className={classnames(style.img, style.img4)}></div>
+            <div className={classnames(style.img, style.img5)}></div>
+          </div>
+        </div>
       </div>
       <div className={style.info}>
         <div className={style.listing}>
