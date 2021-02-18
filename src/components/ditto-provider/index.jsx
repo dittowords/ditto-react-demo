@@ -27,6 +27,7 @@ const useDittoSingleText = (textId) => {
   }
   return "[Text not found in this Ditto project for the provided ID]";
 }
+
 const useDitto = (frameId, blockId, textId, filters) => {
   const copy = useContext(DittoContext);
 
@@ -56,6 +57,8 @@ const useDitto = (frameId, blockId, textId, filters) => {
 
     return block;
   }
+
+  return {};
 }
 
 export const Ditto = ({
