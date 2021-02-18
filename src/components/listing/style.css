@@ -8,17 +8,24 @@
     max-height: 30px;
   }
 }
+.header {
+  margin: 0 200px;
+
+  & h1 {
+    font-weight: bold;
+    font-size: 26px;
+  }
+}
 .images {
   display: flex;
   margin: 40px 200px;
-
 
   & .img {
     flex-grow: 1;
     border-radius: 10px;
     background-size: cover;
     background-position: center;
-    min-height: 250px;
+    min-height: 200px;
   }
   & .grid {
     width: 50%;
@@ -29,23 +36,23 @@
   & .img1 {
     background-image: url("../../img/listing1.png");
     width: 50%;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   & .img2 {
     background-image: url("../../img/listing2.jpeg");
     width: 25%;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
   & .img3 {
     background-image: url("../../img/listing3.jpeg");
     width: 25%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   & .img4 {
     background-image: url("../../img/listing4.jpeg");
     width: 25%;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   & .img5 {
     background-image: url("../../img/listing5.jpeg");
@@ -104,7 +111,7 @@
         margin-top: 20px;
 
         & .select {
-          flex-grow: 1;
+          width: 50%;
           padding: 12px;
         }
         & .select:first-child {
@@ -116,6 +123,15 @@
         border: 1px solid #DADADA;
         border-radius: 0px 0px 10px 10px;
         margin-bottom: 20px;
+      }
+      & .label {
+        font-weight: bold;
+        font-size: 14px;
+      }
+      & .placeholder {
+        font-weight: 500;
+        font-size: 14px;
+        color: #8C8C8C;
       }
 
       & button {

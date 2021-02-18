@@ -16,6 +16,9 @@ const Listing = ({}) => {
         </div>
         <div>Become a host</div>
       </div>
+      <div className={style.header}>
+        <h1><Ditto textId="text_601cc35c5be42cc3f6f8ac7a"/></h1>
+      </div>
       <div className={style.images}>
         <div className={classnames(style.img, style.img1)}></div>
         <div className={style.grid}>
@@ -47,7 +50,6 @@ const Listing = ({}) => {
                 ));
               }}
             </Ditto>
-            <hr/>
           </div>
           <div className={style.booking}>
             <div className={style.module}>
@@ -57,16 +59,19 @@ const Listing = ({}) => {
               </div>
               <div className={style.select1}>
                 <div className={style.select}>
-                  Check in
+                  <div className={style.label}><Ditto textId="text_601cc35d5be42cc3f6f8ac82"/></div>
+                  <div className={style.placeholder}><Ditto textId="text_601cc35d5be42cc3f6f8ac81"/></div>
                 </div>
                 <div className={style.select}>
-                  Check out
+                  <div className={style.label}><Ditto textId="text_601cc35d5be42cc3f6f8ac84"/></div>
+                  <div className={style.placeholder}><Ditto textId="text_601cc35d5be42cc3f6f8ac86"/></div>
                 </div>
               </div>
               <div className={style.select2}>
-                Guests
+                <div className={style.label}><Ditto textId="text_601cc35d5be42cc3f6f8ac85"/></div>
+                <div className={style.placeholder}><Ditto textId="text_601cc35d5be42cc3f6f8ac87"/></div>
               </div>
-              <button>Check Availability</button>
+              <button><Ditto textId="text_601cc35d5be42cc3f6f8ac88"/></button>
             </div>
           </div>
         </div>
