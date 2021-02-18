@@ -65,7 +65,7 @@
     display: flex;
 
     & .listingInfo {
-      width: 66%;
+      width: 60%;
       font-size: 14px;
       color: #8C8C8C;
 
@@ -85,7 +85,7 @@
       }
     }
     & .booking {
-      width: 33%;
+      width: 40%;
       margin-left: 30px;
 
       & .module {
