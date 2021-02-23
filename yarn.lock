@@ -2002,10 +2002,10 @@ dir-glob@2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
-ditto-react@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/ditto-react/-/ditto-react-0.0.1.tgz#d00a318f580bcc7c53ea51bc41cb20b7f4ca6685"
-  integrity sha512-VYnc7UEjbkz+21fNr5d7STe8eV1rc9K9UqgsNTFCpdF68HJf3D9AwtDLNl42WT86GdI71sGEU4CBzlR9QgAPaA==
+ditto-react@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ditto-react/-/ditto-react-0.0.2.tgz#c3bf7a6e912e3b3e885ec9f9e98e9f20975184d4"
+  integrity sha512-3QsrC3X9vLZ7gpMk7hEAvWUi/nuMIjk2LG01w4YC67MLJCykDW3+9tKpWc21KEUODMnxOldIHdgAVBJid+mTNA==
 
 dom-converter@^0.2:
   version "0.2.0"

@@ -17,7 +17,7 @@ const Landing = ({}) => {
           </div>
           <div className={style.links}>
             <Ditto
-              frameId="landing_header"
+              frameId="frame_601cc35d5be42cc3f6f8ad15"
               blockId="navigation"
               filters={{ tags: ["TOP_NAV"]}}
             >
@@ -31,13 +31,13 @@ const Landing = ({}) => {
           <div>Become a host</div>
         </div>
         <div className={style.hero}>
-          <Ditto frameId="landing_header" blockId="hero">
+          <Ditto frameId="frame_601cc35d5be42cc3f6f8ad15" blockId="hero">
             {({
-              hero_h1, hero_subtext, hero_cta
+              hero_h1, text_601cc35c5be42cc3f6f8ac46, hero_cta
             }) => (
               <div>
                 <h1>{hero_h1}</h1>
-                <h2>{hero_subtext}</h2>
+                <h2>{text_601cc35c5be42cc3f6f8ac46}</h2>
                 <button>{hero_cta}</button>
               </div>
             )}
