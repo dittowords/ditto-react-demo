@@ -15,7 +15,7 @@ const Footer = ({}) => {
             {
               Object.keys(frame.blocks[blockId]).map((textId) => (
                 <div className={style.link} key={textId}>
-                  {frame.blocks[blockId][textId].text}
+                  {frame.blocks[blockId][textId]}
                 </div>
               ))
             }
