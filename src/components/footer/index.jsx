@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import style from './style.css';
 
-import { Ditto } from '../ditto-provider';
+import { Ditto } from 'ditto-react';
 
 const Footer = ({}) => {
   return <div className={style.footer}>
