@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import style from './style.css';
 import logo from "../../img/logo.png";
-import source from "/.ditto/text.json";
+import source from "/ditto/text.json";
 import Footer from '../footer';
 
 import DittoProvider, { Ditto } from 'ditto-react';

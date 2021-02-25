@@ -2,7 +2,7 @@ import React from 'react';
 import classnames from 'classnames';
 import style from './style.css';
 import logo from "../../img/logo.png";
-import source from "/.ditto/text.json";
+import source from "/ditto/text.json";
 import Footer from '../footer';
 
 import DittoProvider, { Ditto } from 'ditto-react';
@@ -17,7 +17,7 @@ const Landing = ({}) => {
           </div>
           <div className={style.links}>
             <Ditto
-              frameId="frame_601cc35d5be42cc3f6f8ad15"
+              frameId="hero_header"
               blockId="navigation"
               filters={{ tags: ["TOP_NAV"]}}
             >
@@ -31,7 +31,7 @@ const Landing = ({}) => {
           <div>Become a host</div>
         </div>
         <div className={style.hero}>
-          <Ditto frameId="frame_601cc35d5be42cc3f6f8ad15" blockId="hero">
+          <Ditto frameId="hero_header" blockId="hero">
             {({
               hero_h1, text_601cc35c5be42cc3f6f8ac46, hero_cta
             }) => (
