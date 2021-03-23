@@ -38,7 +38,7 @@
             ]
           },
           "text_601cc35c5be42cc3f6f8ac46": {
-            "text": "Book lots of unique places to stay and things to do.",
+            "text": "Book unique places to stay and things to do.",
             "status": "REVIEW",
             "tags": [
               "SUBTEXT",
@@ -47,15 +47,16 @@
             "notes": "Ideally no longer than 20 words"
           },
           "hero_cta": {
-            "text": "Explore stays",
+            "text": "Explore our stays",
             "tags": [
               "CTA"
             ]
           }
         },
-        "search": {
+        "search_bar": {
           "text_601cc35c5be42cc3f6f8ac49": {
             "text": "Location",
+            "status": "FINAL",
             "tags": [
               "LABEL"
             ]
@@ -68,6 +69,7 @@
           },
           "text_601cc35c5be42cc3f6f8ac4d": {
             "text": "Check in",
+            "status": "FINAL",
             "tags": [
               "LABEL"
             ]
@@ -80,6 +82,7 @@
           },
           "text_601cc35c5be42cc3f6f8ac4a": {
             "text": "Check out",
+            "status": "FINAL",
             "tags": [
               "LABEL"
             ]
@@ -113,7 +116,7 @@
     "frame_601cc35d5be42cc3f6f8ad16": {
       "frameName": "Body",
       "blocks": {
-        "home and stay types": {
+        "home_types": {
           "text_601cc35c5be42cc3f6f8ac54": {
             "text": "Live anywhere",
             "tags": [
@@ -165,7 +168,7 @@
             ]
           },
           "text_601cc35c5be42cc3f6f8ac60": {
-            "text": "Attend a live personal concert by local garage bands ",
+            "text": "Attend a live personal concert by local indie bands ",
             "tags": [
               "EXAMPLE"
             ]
@@ -263,7 +266,8 @@
             ]
           },
           "text_601cc35c5be42cc3f6f8ac74": {
-            "text": "Invite friends",
+            "text": "Invite your friends",
+            "status": "REVIEW",
             "tags": [
               "LINK"
             ]
@@ -352,7 +356,7 @@
           "text_601cc35d5be42cc3f6f8ac82": {
             "text": "Check in"
           },
-          "text_601cc35d5be42cc3f6f8ac81": {
+          "add_dates_button": {
             "text": "Add dates"
           },
           "text_601cc35d5be42cc3f6f8ac84": {
@@ -368,7 +372,8 @@
             "text": "Add guests"
           },
           "text_601cc35d5be42cc3f6f8ac88": {
-            "text": "Check Availbility",
+            "text": "Check Availability",
+            "status": "FINAL",
             "tags": [
               "CTA"
             ]
@@ -379,7 +384,8 @@
             "text": "Entire home"
           },
           "text_601cc35d5be42cc3f6f8ac8a": {
-            "text": "You’ll have the house to yourself."
+            "text": "You’ll have the house to yourself.",
+            "status": "WIP"
           },
           "text_601cc35d5be42cc3f6f8ac8c": {
             "text": "Pool"
@@ -438,32 +444,23 @@
         }
       },
       "otherText": {
-        "text_601cc35c5be42cc3f6f8ac78": {
-          "text": "Become a host"
-        },
         "text_601cc35c5be42cc3f6f8ac79": {
           "text": "dittobnb"
-        },
-        "text_601cc35c5be42cc3f6f8ac7a": {
-          "text": "Bright and Spacious Modern Villa"
-        },
-        "text_601cc35d5be42cc3f6f8ac7b": {
-          "text": "Entire house hosted by Earl"
-        },
-        "text_601cc35d5be42cc3f6f8ac7c": {
-          "text": "Smallville, California, United States"
-        },
-        "text_601cc35d5be42cc3f6f8ac7e": {
-          "text": "Superhost"
         },
         "text_601cc35d5be42cc3f6f8ac7f": {
           "text": "Start your search"
         },
-        "text_601cc35d5be42cc3f6f8ac80": {
-          "text": "4.7 (12)"
+        "text_601cc35c5be42cc3f6f8ac78": {
+          "text": "Become a host"
         },
-        "text_601cc35d5be42cc3f6f8ac83": {
-          "text": "$148 / night"
+        "text_601cc35c5be42cc3f6f8ac7a": {
+          "text": "Bright and Spacious Modern Villa"
+        },
+        "text_601cc35d5be42cc3f6f8ac7e": {
+          "text": "Superhost"
+        },
+        "text_601cc35d5be42cc3f6f8ac7c": {
+          "text": "Smallville, CA, United States"
         },
         "text_601cc35d5be42cc3f6f8ac92": {
           "text": "Show all photos",
@@ -471,30 +468,39 @@
             "CTA"
           ]
         },
-        "text_601cc35d5be42cc3f6f8ac93": {
-          "text": "5.0"
+        "text_601cc35d5be42cc3f6f8ac7b": {
+          "text": "Entire house hosted by Janet"
+        },
+        "text_601cc35d5be42cc3f6f8ac83": {
+          "text": "$148 / night"
+        },
+        "text_601cc35d5be42cc3f6f8ac80": {
+          "text": "4.7 (12)"
+        },
+        "text_601cc35d5be42cc3f6f8ac91": {
+          "text": "4 guests • 2 bedrooms • 2 beds • 1 bath"
         },
         "text_601cc35d5be42cc3f6f8ac95": {
           "text": "4.7 (12 Reviews)"
         },
-        "text_601cc35d5be42cc3f6f8ac96": {
+        "text_601cc35d5be42cc3f6f8ac93": {
           "text": "5.0"
         },
-        "text_601cc35d5be42cc3f6f8ac97": {
+        "text_601cc35d5be42cc3f6f8ac96": {
           "text": "5.0"
         },
         "text_601cc35d5be42cc3f6f8ac98": {
           "text": "5.0"
         },
-        "text_601cc35d5be42cc3f6f8ac99": {
+        "text_601cc35d5be42cc3f6f8ac97": {
           "text": "5.0"
         },
-        "text_601cc35d5be42cc3f6f8ac91": {
-          "text": "4 guests • 2 bedrooms • 2 beds • 1 bath"
+        "text_601cc35d5be42cc3f6f8ac99": {
+          "text": "5.0"
         }
       }
     },
-    "frame_601cc35d5be42cc3f6f8ad19": {
+    "Frame_601cc35d5be42cc3f6f8ad19": {
       "frameName": "Hosts Hero",
       "blocks": {
         "hero": {
@@ -510,7 +516,7 @@
               "SUBTEXT"
             ]
           },
-          "text_601cc35d5be42cc3f6f8aca6": {
+          "text_601cc35d5be42cc3f6f8aca6d": {
             "text": "Get Started",
             "tags": [
               "CTA"
