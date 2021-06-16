@@ -21,14 +21,14 @@ const App = () => {
     <div>
       <Router history={history}>
         <Switch>
-          <Route path="/landing">
-            <Landing/>
-          </Route>
           <Route path="/listing">
             <Listing/>
           </Route>
           <Route path="/hosts">
             <Hosts/>
+          </Route>
+          <Route>
+            <Landing />
           </Route>
         </Switch>
       </Router>
