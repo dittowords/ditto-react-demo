@@ -7,6 +7,7 @@ import { Ditto } from 'ditto-react';
 const Footer = ({}) => {
   return <div className={style.footer}>
     <Ditto
+      projectId="project_601cc3515be42cc3f6f8ac40"
       frameId="frame_601cc35d5be42cc3f6f8ad17"
     >
       {( frame ) => {

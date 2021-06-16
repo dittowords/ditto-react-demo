@@ -17,6 +17,7 @@ const Landing = ({}) => {
           </div>
           <div className={style.links}>
             <Ditto
+              projectId="project_601cc3515be42cc3f6f8ac40"
               frameId="hero_header"
               blockId="navigation"
               filters={{ tags: ["TOP_NAV"]}}
@@ -31,7 +32,11 @@ const Landing = ({}) => {
           <div>Become a host</div>
         </div>
         <div className={style.hero}>
-          <Ditto frameId="hero_header" blockId="hero">
+          <Ditto 
+            projectId="project_601cc3515be42cc3f6f8ac40"
+            frameId="hero_header" 
+            blockId="hero"
+          >
             {({
               hero_h1, text_601cc35c5be42cc3f6f8ac46, hero_cta
             }) => (
@@ -45,42 +50,44 @@ const Landing = ({}) => {
         </div>
       </div>
       <div className={classnames(style.section, style.light)}>
-        <h2><Ditto textId="text_601cc35c5be42cc3f6f8ac54"/></h2>
+        <h2>
+          <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac54"/>
+        </h2>
         <div className={style.gallery}>
           <div className={style.card4}>
             <div className={classnames(style.img, style.liveAnywhere0)}></div>
             <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac56"/>
+              <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac56"/>
             </div>
           </div>
           <div className={style.card4}>
             <div className={classnames(style.img, style.liveAnywhere1)}></div>
             <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac57"/>
+              <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac57"/>
             </div>
           </div>
           <div className={style.card4}>
             <div className={classnames(style.img, style.liveAnywhere2)}></div>
             <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac58"/>
+              <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac58"/>
             </div>
           </div>
           <div className={style.card4}>
             <div className={classnames(style.img, style.liveAnywhere3)}></div>
             <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac59"/>
+              <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac59"/>
             </div>
           </div>
         </div>
 
       </div>
       <div className={classnames(style.section, style.dark)}>
-        <h2><Ditto textId="text_601cc35c5be42cc3f6f8ac5a"/></h2>
+        <h2><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac5a"/></h2>
         <div className={style.gallery}>
           <div className={style.card2}>
             <div className={classnames(style.img, style.onlineexp1)}>
               <div className={classnames(style.label, style.caption)}>
-                <Ditto textId="text_601cc35c5be42cc3f6f8ac60"/>
+                <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac60"/>
               </div>
             </div>
           </div>
@@ -89,14 +96,14 @@ const Landing = ({}) => {
               <div className={style.card2}>
                 <div className={classnames(style.img, style.onlineexp2)}>
                   <div className={classnames(style.label, style.caption)}>
-                    <Ditto textId="text_601cc35c5be42cc3f6f8ac63"/>
+                    <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac63"/>
                   </div>
                 </div>
               </div>
               <div className={style.card2}>
                 <div className={classnames(style.img, style.onlineexp3)}>
                   <div className={classnames(style.label, style.caption)}>
-                    <Ditto textId="text_601cc35c5be42cc3f6f8ac62"/>
+                    <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac62"/>
                   </div>
                 </div>
               </div>
@@ -104,7 +111,7 @@ const Landing = ({}) => {
             <div className={style.card1}>
               <div className={classnames(style.img, style.onlineexp4)}>
                 <div className={classnames(style.label, style.caption)}>
-                  <Ditto textId="text_601cc35c5be42cc3f6f8ac63"/>
+                  <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac63"/>
                 </div>
               </div>
             </div>
@@ -112,24 +119,24 @@ const Landing = ({}) => {
         </div>
       </div>
       <div className={classnames(style.section, style.light)}>
-        <h2><Ditto textId="text_601cc35c5be42cc3f6f8ac50"/></h2>
+        <h2><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac50"/></h2>
         <div className={style.gallery}>
           <div className={style.card3}>
             <div className={classnames(style.img, style.hosts0)}></div>
             <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac5d"/>
+              <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac5d"/>
             </div>
           </div>
           <div className={style.card3}>
             <div className={classnames(style.img, style.hosts1)}></div>
             <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac5e"/>
+              <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac5e"/>
             </div>
           </div>
           <div className={style.card3}>
             <div className={classnames(style.img, style.hosts2)}></div>
             <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac5f"/>
+              <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac5f"/>
             </div>
           </div>
         </div>
