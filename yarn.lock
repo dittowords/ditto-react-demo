@@ -863,6 +863,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@jordin/react-library-testing@^0.0.4":
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/@jordin/react-library-testing/-/react-library-testing-0.0.4.tgz#cdd3bd490e82ed5b11cc33699ebcad0a3e230986"
+  integrity sha512-X9AHwntXboSWteoVmkXdeyEVqppR+JV7ZB4HmGDRIiITjxt0eg1wkyqVnBq96PqpRi0TVYJhMc9rFtTh6B70JQ==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
