@@ -9,7 +9,7 @@ import DittoProvider, { Ditto } from 'ditto-react';
 
 const Listing = ({}) => {
   return <div className={style.body}>
-    <DittoProvider source={source}>
+    <DittoProvider projectId="project_601cc3515be42cc3f6f8ac40" source={source}>
       <div className={style.nav}>
         <div className={style.logo}>
           <img src={logo}/>
@@ -17,7 +17,7 @@ const Listing = ({}) => {
         <div>Become a host</div>
       </div>
       <div className={style.header}>
-        <h1><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35c5be42cc3f6f8ac7a"/></h1>
+        <h1><Ditto textId="text_601cc35c5be42cc3f6f8ac7a"/></h1>
       </div>
       <div className={style.images}>
         <div className={classnames(style.img, style.img1)}></div>
@@ -36,15 +36,14 @@ const Listing = ({}) => {
         <div className={style.listing}>
           <div className={style.listingInfo}>
             <h3>
-              <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8ac7b"/>
+              <Ditto textId="text_601cc35d5be42cc3f6f8ac7b"/>
             </h3>
-            <Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8ac91"/>
+            <Ditto textId="text_601cc35d5be42cc3f6f8ac91"/>
             <br/>
             <hr/>
             <br/>
             <Ditto
-              projectId="project_601cc3515be42cc3f6f8ac40"
-              frameId="listing_app"
+              frameId="frame_601cc35d5be42cc3f6f8ad18"
               blockId="amenities"
             >
               {( block ) => {
@@ -62,19 +61,19 @@ const Listing = ({}) => {
               </div>
               <div className={style.select1}>
                 <div className={style.select}>
-                  <div className={style.label}><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8ac82"/></div>
-                  <div className={style.placeholder}><Ditto textId="text_601cc35d5be42cc3f6f8ac81"/></div>
+                  <div className={style.label}><Ditto textId="text_601cc35d5be42cc3f6f8ac82"/></div>
+                  <div className={style.placeholder}><Ditto textId="add_dates_button"/></div>
                 </div>
                 <div className={style.select}>
-                  <div className={style.label}><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8ac84"/></div>
-                  <div className={style.placeholder}><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8ac86"/></div>
+                  <div className={style.label}><Ditto textId="text_601cc35d5be42cc3f6f8ac84"/></div>
+                  <div className={style.placeholder}><Ditto textId="text_601cc35d5be42cc3f6f8ac86"/></div>
                 </div>
               </div>
               <div className={style.select2}>
-                <div className={style.label}><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8ac85"/></div>
-                <div className={style.placeholder}><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8ac87"/></div>
+                <div className={style.label}><Ditto textId="text_601cc35d5be42cc3f6f8ac85"/></div>
+                <div className={style.placeholder}><Ditto textId="text_601cc35d5be42cc3f6f8ac87"/></div>
               </div>
-              <button><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8ac88"/></button>
+              <button><Ditto textId="text_601cc35d5be42cc3f6f8ac88"/></button>
             </div>
           </div>
         </div>
@@ -82,8 +81,8 @@ const Listing = ({}) => {
         </div>
       </div>
       <div className={style.otherOptions}>
-        <h4><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8aca0"/></h4>
-        <div><Ditto projectId="project_601cc3515be42cc3f6f8ac40" textId="text_601cc35d5be42cc3f6f8aca1"/></div>
+        <h4><Ditto textId="text_601cc35d5be42cc3f6f8aca0"/></h4>
+        <div><Ditto textId="text_601cc35d5be42cc3f6f8aca1"/></div>
       </div>
       <Footer/>
     </DittoProvider>
