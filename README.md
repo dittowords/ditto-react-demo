@@ -7,6 +7,6 @@ Example web-app to demonstrate the functionality of Ditto's CLI and React SDK.
 
 To run the web app, type `npm start`. 
 
-For more information on getting set up, go to: https://developer.dittowords.com/getting-started/use-our-cli-in-our-example-web-app
+For more information on getting set up, go to: https://developer.dittowords.com/getting-started/use-our-cli-with-our-sandbox-web-app
 
 For our companion Figma file, go to: https://www.figma.com/community/file/956627227087012313
