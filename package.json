@@ -9,7 +9,7 @@
     "classnames": "^2.2.6",
     "css-loader": "^0.28.11",
     "cssnano": "^4.0.0",
-    "ditto-react": "^0.0.2",
+    "ditto-react": "^0.0.4",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "file-loader": "^1.1.11",

@@ -9,7 +9,7 @@ import DittoProvider, { Ditto } from 'ditto-react';
 
 const Landing = ({}) => {
   return <div className={style.body}>
-    <DittoProvider source={source}>
+    <DittoProvider projectId="project_601cc3515be42cc3f6f8ac40" source={source}>
       <div className={style.header}>
         <div className={style.nav}>
           <div className={style.logo}>
@@ -31,7 +31,10 @@ const Landing = ({}) => {
           <div>Become a host</div>
         </div>
         <div className={style.hero}>
-          <Ditto frameId="hero_header" blockId="hero">
+          <Ditto 
+            frameId="hero_header" 
+            blockId="hero"
+          >
             {({
               hero_h1, text_601cc35c5be42cc3f6f8ac46, hero_cta
             }) => (
@@ -45,7 +48,9 @@ const Landing = ({}) => {
         </div>
       </div>
       <div className={classnames(style.section, style.light)}>
-        <h2><Ditto textId="text_601cc35c5be42cc3f6f8ac54"/></h2>
+        <h2>
+          <Ditto textId="text_601cc35c5be42cc3f6f8ac54"/>
+        </h2>
         <div className={style.gallery}>
           <div className={style.card4}>
             <div className={classnames(style.img, style.liveAnywhere0)}></div>
