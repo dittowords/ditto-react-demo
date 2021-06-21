@@ -138,9 +138,6 @@ module.exports = (env, argv) => {
         'node_modules',
         path.resolve(__dirname, 'node_modules'),
       ],
-      alias: {
-        "ditto-react": path.resolve(__dirname, "node_modules/@jordin/react-library-testing")
-      }
     },
     output: {
       path: path.join(__dirname, 'dist'),
