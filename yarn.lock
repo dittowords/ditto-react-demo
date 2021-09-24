@@ -1161,10 +1161,10 @@
   resolved "https://registry.yarnpkg.com/@csstools/normalize.css/-/normalize.css-10.1.0.tgz#f0950bba18819512d42f7197e56c518aa491cf18"
   integrity sha512-ij4wRiunFfaJxjB0BdrYHIH8FxBJpOwNPhhAcunlmPdXudL1WQV1qoP9un6JsEBAgQH+7UXyyjh0g7jTxXK6tg==
 
-"@dittowords/cli@^1.1.1-beta.0":
-  version "1.1.1-beta.0"
-  resolved "https://registry.yarnpkg.com/@dittowords/cli/-/cli-1.1.1-beta.0.tgz#18a359c27be948cdcf2f7e4a732cbfe1051e8996"
-  integrity sha512-gIowwthk7WWVlP6r0rz0pLHaCCAJKc5XEWcxvR1ljWxGvg1kzLdkWC4zVXJbBNQNIgae89fOa1DoJdO+F8uOKg==
+"@dittowords/cli@^1.1.1-beta.2":
+  version "1.1.1-beta.2"
+  resolved "https://registry.yarnpkg.com/@dittowords/cli/-/cli-1.1.1-beta.2.tgz#6eff16d240942667a6a80b6a38ec130c60d33134"
+  integrity sha512-dISSmjYH0aS0/50Pmb+tVSU2FvWKl0edWKBHugFigGg3xfCee9pvfQAe3uhWw6HRCmKtK+JwYJg59cCJQAfufw==
   dependencies:
     axios "^0.19.2"
     boxen "^4.2.0"
