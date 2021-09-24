@@ -1,4 +1,5 @@
 .listing {
+  margin-top: 65px;
   .nav {
     padding: 36px 80px;
     display: flex;
@@ -10,7 +11,7 @@
     }
   }
   .header {
-    margin: 0 200px;
+    margin: 0 80px;
 
     & h1 {
       font-weight: bold;
@@ -19,7 +20,7 @@
   }
   .images {
     display: flex;
-    margin: 40px 200px;
+    margin: 40px 80px;
 
     & .img {
       flex-grow: 1;
@@ -61,7 +62,7 @@
     }
   }
   .info {
-    margin: 0 200px;
+    margin: 0 80px;
     & .listing {
       display: flex;
 
@@ -74,6 +75,11 @@
           font-weight: bold;
           font-size: 22px;
           color: #000000;
+        }
+        & h4 {
+          color: #000;
+          font-size: 14px;
+          font-weight: bold;
         }
         & .amenity:nth-child(odd) {
           font-weight: bold;
@@ -152,7 +158,7 @@
   }
   .otherOptions {
     border-top: 1px solid #dadada;
-    padding: 60px 200px;
+    padding: 60px 80px;
 
     & h4 {
       font-weight: bold;

@@ -49,5 +49,12 @@
   "footer.support.title": "SUPPORT",
   "footer.support.help": "Help Center",
   "footer.support.trust-safety": "Trust and Safety",
-  "footer.support.cancellation": "Cancellation Options"
+  "footer.support.cancellation": "Cancellation Options",
+  "listing.other-options.title": "Explore other options nearby",
+  "listing.other-options.apartments": "Apartments",
+  "listing.other-options.houses": "Houses",
+  "listing.other-options.lofts": "Lofts",
+  "listing.other-options.barns": "Barns",
+  "listing.other-options.spaceships": "Spaceships",
+  "listing.check-availability.button": "Check Availability"
 }
