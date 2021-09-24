@@ -1,0 +1,5 @@
+projects:
+  - name: Ditto Component Library
+    id: ditto_component_library
+variants: true
+format: flat
