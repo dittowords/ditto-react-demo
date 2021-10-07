@@ -1,146 +1,114 @@
 import React from 'react';
-import classnames from 'classnames';
-import style from './style.css';
+import { Link } from 'react-router-dom';
 import logo from "../../img/logo.png";
-import source from "/ditto/text.json";
 import Footer from '../footer';
 
-import DittoProvider, { Ditto } from 'ditto-react';
+import { Ditto } from 'ditto-react';
+
+import './style.scss';
 
 const Landing = ({}) => {
-  return <div className={style.body}>
-    <DittoProvider projectId="project_601cc3515be42cc3f6f8ac40" source={source}>
-      <div className={style.header}>
-        <div className={style.nav}>
-          <div className={style.logo}>
-            <img src={logo}/>
+  return <div className="landing body">
+      <div className="header">
+        <div className="hero">
+          <div>
+            <h1><Ditto componentId="landing.hero.title" /></h1>
+            <h2><Ditto componentId="landing.hero.subtitle" /></h2>
+            <Link className="button" to="/listing"><Ditto componentId="landing.hero.cta" /></Link>
           </div>
-          <div className={style.links}>
-            <Ditto
-              frameId="hero_header"
-              blockId="navigation"
-              filters={{ tags: ["TOP_NAV"]}}
-            >
-              {( block ) => {
-                return Object.keys(block).map((id) => (
-                  <div className={style.link} key={block[id]}>{block[id]}</div>
-                ));
-              }}
-            </Ditto>
-          </div>
-          <div>Become a host</div>
-        </div>
-        <div className={style.hero}>
-          <Ditto 
-            frameId="hero_header" 
-            blockId="hero"
-          >
-            {({
-              hero_h1, text_601cc35c5be42cc3f6f8ac46, hero_cta
-            }) => (
-              <div>
-                <h1>{hero_h1}</h1>
-                <h2>{text_601cc35c5be42cc3f6f8ac46}</h2>
-                <button>{hero_cta}</button>
-              </div>
-            )}
-          </Ditto>
         </div>
       </div>
-      <div className={classnames(style.section, style.light)}>
+      <div className="section light">
         <h2>
-          <Ditto textId="text_601cc35c5be42cc3f6f8ac54"/>
+          <Ditto componentId="landing.body.live-anywhere.title"/>
         </h2>
-        <div className={style.gallery}>
-          <div className={style.card4}>
-            <div className={classnames(style.img, style.liveAnywhere0)}></div>
-            <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac56"/>
+        <div className="gallery">
+          <div className="card4">
+            <div className="img liveAnywhere0"></div>
+            <div className="label">
+              <Ditto componentId="landing.body.live-anywhere.entire-homes"/>
             </div>
           </div>
-          <div className={style.card4}>
-            <div className={classnames(style.img, style.liveAnywhere1)}></div>
-            <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac57"/>
+          <div className="card4">
+            <div className="img liveAnywhere1"></div>
+            <div className="label">
+              <Ditto componentId="landing.body.live-anywhere.cabins-and-cottages"/>
             </div>
           </div>
-          <div className={style.card4}>
-            <div className={classnames(style.img, style.liveAnywhere2)}></div>
-            <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac58"/>
+          <div className="card4">
+            <div className="img liveAnywhere2"></div>
+            <div className="label">
+              <Ditto componentId="landing.body.live-anywhere.unique-stays"/>
             </div>
           </div>
-          <div className={style.card4}>
-            <div className={classnames(style.img, style.liveAnywhere3)}></div>
-            <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac59"/>
+          <div className="card4">
+            <div className="img liveAnywhere3"></div>
+            <div className="label">
+              <Ditto componentId="landing.body.live-anywhere.pets-welcome"/>
             </div>
           </div>
         </div>
-
       </div>
-      <div className={classnames(style.section, style.dark)}>
-        <h2><Ditto textId="text_601cc35c5be42cc3f6f8ac5a"/></h2>
-        <div className={style.gallery}>
-          <div className={style.card2}>
-            <div className={classnames(style.img, style.onlineexp1)}>
-              <div className={classnames(style.label, style.caption)}>
-                <Ditto textId="text_601cc35c5be42cc3f6f8ac60"/>
+      <div className="section dark">
+        <h2><Ditto componentId="landing.body.online-experiences.title"/></h2>
+        <div className="gallery">
+          <div className="card2">
+            <div className="img onlineexp1">
+              <div className="label caption">
+                <Ditto componentId="landing.body.online-experiences.live-concert"/>
               </div>
             </div>
           </div>
-          <div className={style.vertical}>
-            <div className={style.gallery}>
-              <div className={style.card2}>
-                <div className={classnames(style.img, style.onlineexp2)}>
-                  <div className={classnames(style.label, style.caption)}>
-                    <Ditto textId="text_601cc35c5be42cc3f6f8ac63"/>
+          <div className="vertical">
+            <div className="gallery">
+              <div className="card2">
+                <div className="img onlineexp2">
+                  <div className="label caption">
+                    <Ditto componentId="landing.body.online-experiences.learn-photography"/>
                   </div>
                 </div>
               </div>
-              <div className={style.card2}>
-                <div className={classnames(style.img, style.onlineexp3)}>
-                  <div className={classnames(style.label, style.caption)}>
-                    <Ditto textId="text_601cc35c5be42cc3f6f8ac62"/>
+              <div className="card2">
+                <div className="img onlineexp3">
+                  <div className="label caption">
+                    <Ditto componentId="landing.body.online-experiences.event-support"/>
                   </div>
                 </div>
               </div>
             </div>
-            <div className={style.card1}>
-              <div className={classnames(style.img, style.onlineexp4)}>
-                <div className={classnames(style.label, style.caption)}>
-                  <Ditto textId="text_601cc35c5be42cc3f6f8ac63"/>
+            <div className="card1">
+              <div className="img onlineexp4">
+                <div className="label caption">
+                  <Ditto componentId="landing.body.online-experiences.stovetop-tricks"/>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className={classnames(style.section, style.light)}>
-        <h2><Ditto textId="text_601cc35c5be42cc3f6f8ac50"/></h2>
-        <div className={style.gallery}>
-          <div className={style.card3}>
-            <div className={classnames(style.img, style.hosts0)}></div>
-            <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac5d"/>
+      <div className="section light">
+        <h2><Ditto componentId="landing.body.join-hosts.title"/></h2>
+        <div className="gallery">
+          <div className="card3">
+            <div className="img hosts0"></div>
+            <div className="label">
+              <Ditto componentId="landing.body.join-hosts.host-home"/>
             </div>
           </div>
-          <div className={style.card3}>
-            <div className={classnames(style.img, style.hosts1)}></div>
-            <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac5e"/>
+          <div className="card3">
+            <div className="img hosts1"></div>
+            <div className="label">
+              <Ditto componentId="landing.body.join-hosts.host-experience"/>
             </div>
           </div>
-          <div className={style.card3}>
-            <div className={classnames(style.img, style.hosts2)}></div>
-            <div className={style.label}>
-              <Ditto textId="text_601cc35c5be42cc3f6f8ac5f"/>
+          <div className="card3">
+            <div className="img hosts2"></div>
+            <div className="label">
+              <Ditto componentId="landing.body.join-hosts.host-online-experience"/>
             </div>
           </div>
         </div>
       </div>
-      <Footer/>
-    </DittoProvider>
   </div>
 }
 
