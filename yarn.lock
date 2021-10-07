@@ -4292,10 +4292,10 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-ditto-react@^0.1.0-beta.2:
-  version "0.1.0-beta.2"
-  resolved "https://registry.yarnpkg.com/ditto-react/-/ditto-react-0.1.0-beta.2.tgz#b43c500ae5b1240ccb4b5d43ab6e62f709508022"
-  integrity sha512-sr/Ypg0PUnu9Ux4oqRlsHfKasZJkX1NuIbOcJ//wXny4887PXH4icyAOKLrGC1WpDlF5jeDfdN5nkUvT/tdvtQ==
+ditto-react@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/ditto-react/-/ditto-react-0.2.0.tgz#738ac08bd542735e801cd8a7e23da7f7b20a0c50"
+  integrity sha512-LWVtN1PFHnFGwM6p8YrfPGrhWhdXSA8Fi0rTajGcnYJvNzFyT3R8UkjHj7/VshMy1lBrEORszlBtxBPrWc4ifg==
 
 dns-equal@^1.0.0:
   version "1.0.0"
