@@ -36,7 +36,7 @@ You should now have a component library populated with components that have both
 
 If you didn't encounter any errors, your Ditto account and your Dittobnb project should now be connected.
 
-### Making an example change
+### Making an example edit 
 
 1. Sign in to your Ditto account
 2. Navigate to your [component library](https://beta.dittowords.com/components/all)
@@ -47,8 +47,22 @@ If you didn't encounter any errors, your Ditto account and your Dittobnb project
 
 After the sync finishes, the running app should automatically reload to reflect the change made in Ditto!
 
+### Syncing edits from designs 🖼 (optional) 
+
+To sync edits from design all the way to development, you can integrate your Ditto components with a design file. That way, you can also test out sample edits directly from your design file!
+
+1. Duplicate our corresponding [Dittobnb Figma file](https://www.figma.com/community/file/956627227087012313)
+2. Import the file as a new Ditto project via our [Figma plugin](https://www.figma.com/community/plugin/798826066406007173/%E2%9C%8D%EF%B8%8F-Ditto-%7C-collaborate-on-copy). 
+3. Connect your component library to your Ditto project. You can do this quickly via our [Component Suggestions](https://www.dittowords.com/blog/introducing-component-suggestions)! 
+4. Make an edit to text via our Figma plugin. 
+5. Just like syncing edits made directly in your component library, navigate to the root of your cloned `ditto-demo` instance and run `yarn sync` to pull in edits made in Ditto.
+
 ## More Information
+
+For a high level walkthrough, check out our [Developer's Quick Guide to Integrating Ditto](https://www.dittowords.com/blog/a-developers-quick-guide-to-integrating-ditto).
 
 The companion Dittobnb Figma file can be found here: https://www.figma.com/community/file/956627227087012313
 
 For more information on what Ditto offers for developers, go to https://developer.dittowords.com.
+
+For our general help guides, go to https://www.dittowords.com/docs/introduction. 
