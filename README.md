@@ -8,13 +8,13 @@ Dittbnb is a small web app designed to serve as an example of how Ditto's develo
 
 In just a few minutes, you can have a local instance of Dittobnb fully synced up with your own Ditto account.
 
-### Initial setup
+### 🛠 Initial setup
 
 1. Clone the repository
 2. Install dependencies `npm install`
 3. Start the web app `npm start`
 
-### Populating your component library
+### 🗂 Populating your component library
 
 1. Sign in to your Ditto account
 2. Navigate to [your component library](https://beta.dittowords.com/components/all)
@@ -25,7 +25,7 @@ In just a few minutes, you can have a local instance of Dittobnb fully synced up
 
 You should now have a component library populated with components that have both base text and a variant.
 
-### Authenticating with the Ditto CLI
+### 🔐 Authenticating with the Ditto CLI
 
 1. Sign in to your Ditto account
 2. Navigate to your [user settings page](https://beta.dittowords.com/account/user)
@@ -36,7 +36,7 @@ You should now have a component library populated with components that have both
 
 If you didn't encounter any errors, your Ditto account and your Dittobnb project should now be connected.
 
-### Making an example edit 
+### 🖋 Making an example edit 
 
 1. Sign in to your Ditto account
 2. Navigate to your [component library](https://beta.dittowords.com/components/all)
@@ -47,7 +47,7 @@ If you didn't encounter any errors, your Ditto account and your Dittobnb project
 
 After the sync finishes, the running app should automatically reload to reflect the change made in Ditto!
 
-### Syncing edits from designs 🖼 (optional) 
+### 🖼 Syncing edits from designs (optional) 
 
 To sync edits from design all the way to development, you can integrate your Ditto components with a design file. That way, you can also test out sample edits directly from your design file!
 
