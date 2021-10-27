@@ -4292,11 +4292,6 @@ dir-glob@^3.0.1:
   dependencies:
     path-type "^4.0.0"
 
-ditto-react@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/ditto-react/-/ditto-react-1.0.0.tgz#782686c8e779b5eeeb6db78b6cec806de537a117"
-  integrity sha512-vztVcJD8QqchH2ETl2Hnm9eqa9rUIm3NpWQaT38+6723XRtwFPyNiyD+bu5PmKJV4Ic3wfw3UN7MIkuWO1N5OQ==
-
 dns-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/dns-equal/-/dns-equal-1.0.0.tgz#b39e7f1da6eb0a75ba9c17324b34753c47e0654d"
