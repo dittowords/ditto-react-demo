@@ -1,39 +1,40 @@
-import React, { useState } from "react";
-import DittoProvider from "ditto-react";
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Router, Switch, Route } from "react-router-dom";
 import Landing from "./components/landing/landing.jsx";
 import Listing from "./components/listing/listing.jsx";
 import Footer from "./components/footer";
 import history from "./utils/history";
 
-import source from "./ditto";
-
 import "./App.scss";
 import Header from "./components/header/index.jsx";
 
 const App = () => {
-  const [variant, setVariant] = useState("base");
+  const [variant, setVariant] = useState("en");
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    i18n.changeLanguage(variant);
+  }, [variant, i18n]);
 
   return (
-    <DittoProvider source={source} variant={variant}>
-      <div>
+    <div>
+      <Router history={history}>
         <Header
           variant={variant}
           onVariantChange={(e) => setVariant(e.target.value)}
         />
-        <Router history={history}>
-          <Switch>
-            <Route path="/listing">
-              <Listing />
-            </Route>
-            <Route>
-              <Landing />
-            </Route>
-          </Switch>
-        </Router>
-        <Footer />
-      </div>
-    </DittoProvider>
+        <Switch>
+          <Route path="/listing">
+            <Listing />
+          </Route>
+          <Route>
+            <Landing />
+          </Route>
+        </Switch>
+      </Router>
+      <Footer />
+    </div>
   );
 };
 

@@ -1,71 +1,43 @@
 import React from "react";
-
-import { Ditto } from "ditto-react";
+import { useTranslation } from "react-i18next";
 
 import "./style.scss";
 
-const Footer = ({}) => {
+const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer">
       <div className="footerCol">
-        <h2><Ditto componentId="footer.about.title" /></h2>
-        <div className="link">
-          <Ditto componentId="footer.about.company" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.about.press" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.about.blog" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.about.careers" />
-        </div>
+        {t("footer.about.title")}
+        <div className="link">{t("footer.about.company")}</div>
+        <div className="link">{t("footer.about.press")}</div>
+        <div className="link">{t("footer.about.blog")}</div>
+        <div className="link">{t("footer.about.careers")}</div>
       </div>
       <div className="footerCol">
-        <h2><Ditto componentId="footer.community.title" /></h2>
-        <div className="link">
-          <Ditto componentId="footer.community.accessibility" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.community.guests" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.community.invite" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.community.share" />
-        </div>
+        {t("footer.community.title")}
+        <div className="link">{t("footer.community.accessibility")}</div>
+        <div className="link">{t("footer.community.guests")}</div>
+        <div className="link">{t("footer.community.invite")}</div>
+        <div className="link">{t("footer.community.share")}</div>
       </div>
       <div className="footerCol">
-        <h2><Ditto componentId="footer.host.title" /></h2>
+        {t("footer.host.title")}
+        <div className="link">{t("landing.body.join-hosts.host-home")}</div>
         <div className="link">
-          <Ditto componentId="landing.body.join-hosts.host-home" />
+          {t("landing.body.join-hosts.host-experience")}
         </div>
         <div className="link">
-          <Ditto componentId="landing.body.join-hosts.host-experience" />
+          {t("landing.body.join-hosts.host-online-experience")}
         </div>
-        <div className="link">
-          <Ditto componentId="landing.body.join-hosts.host-online-experience" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.host.refer" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.host.resources" />
-        </div>
+        <div className="link">{t("footer.host.refer")}</div>
+        <div className="link">{t("footer.host.resources")}</div>
       </div>
       <div className="footerCol">
-        <h2><Ditto componentId="footer.support.title" /></h2>
-        <div className="link">
-          <Ditto componentId="footer.support.help" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.support.trust-safety" />
-        </div>
-        <div className="link">
-          <Ditto componentId="footer.support.cancellation" />
-        </div>
+        {t("footer.support.title")}
+        <div className="link">{t("footer.support.help")}</div>
+        <div className="link">{t("footer.support.trust-safety")}</div>
+        <div className="link">{t("footer.support.cancellation")}</div>
       </div>
     </div>
   );

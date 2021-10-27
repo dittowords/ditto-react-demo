@@ -43,6 +43,8 @@
   },
   "devDependencies": {
     "customize-cra": "^1.0.0",
-    "react-app-rewired": "^2.1.8"
+    "i18next": "^21.3.3",
+    "react-app-rewired": "^2.1.8",
+    "react-i18next": "^11.12.0"
   }
 }

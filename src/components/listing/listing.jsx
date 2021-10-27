@@ -1,9 +1,11 @@
 import React from "react";
-import { Ditto } from "ditto-react";
+import { useTranslation } from "react-i18next";
 
 import "./style.scss";
 
 const Listing = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="listing body">
       <div className="header">
@@ -25,12 +27,8 @@ const Listing = () => {
       <div className="info">
         <div className="listing">
           <div className="listingInfo">
-            <h3>
-              Entire house hosted by Janet
-            </h3>
-            <p>
-              4 guests • 2 bedrooms • 2 beds • 1 bath
-            </p>
+            <h3>Entire house hosted by Janet</h3>
+            <p>4 guests • 2 bedrooms • 2 beds • 1 bath</p>
             <br />
             <hr />
             <br />
@@ -53,47 +51,41 @@ const Listing = () => {
               <div className="select1">
                 <div className="select">
                   <div className="label">
-                    <Ditto componentId="landing.hero.check-in.label" />
+                    {t("landing.hero.check-in.label")}
                   </div>
                   <div className="placeholder">
-                    <Ditto componentId="landing.hero.check-in.placeholder" />
+                    {t("landing.hero.check-in.placeholder")}
                   </div>
                 </div>
                 <div className="select">
                   <div className="label">
-                    <Ditto componentId="landing.hero.check-out.label" />
+                    {t("landing.hero.check-out.label")}
                   </div>
                   <div className="placeholder">
-                    <Ditto componentId="landing.hero.check-out.placeholder" />
+                    {t("landing.hero.check-out.placeholder")}
                   </div>
                 </div>
               </div>
               <div className="select2">
-                <div className="label">
-                    <Ditto componentId="landing.hero.check-out.label" />
-                </div>
+                <div className="label">{t("landing.hero.check-out.label")}</div>
                 <div className="placeholder">
-                    <Ditto componentId="landing.hero.check-out.placeholder" />
+                  {t("landing.hero.check-out.placeholder")}
                 </div>
               </div>
-              <button>
-                <Ditto componentId="listing.check-availability.button" />
-              </button>
+              <button>{t("listing.check-availability.button")}</button>
             </div>
           </div>
         </div>
         <div className="reviews"></div>
       </div>
       <div className="otherOptions">
-        <h4>
-         <Ditto componentId="listing.other-options.title"  />
-        </h4>
+        <h4>{t("listing.other-options.title")}</h4>
         <div>
-          <Ditto componentId="listing.other-options.apartments" /> •{" "} 
-          <Ditto componentId="listing.other-options.houses" /> •{" "} 
-          <Ditto componentId="listing.other-options.lofts" /> •{" "} 
-          <Ditto componentId="listing.other-options.barns" /> •{" "} 
-          <Ditto componentId="listing.other-options.spaceships" />
+          {t("listing.other-options.apartments")}
+          {t("listing.other-options.houses")}
+          {t("listing.other-options.lofts")}
+          {t("listing.other-options.barns")}
+          {t("listing.other-options.spaceships")}
         </div>
       </div>
     </div>
