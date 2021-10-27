@@ -21,7 +21,7 @@ In just a few minutes, you can have a local instance of Dittobnb fully synced up
 3. Enable [Developer Mode](https://www.dittowords.com/docs/ditto-developer-mode) for your component library if it isn't enabled already
 4. In the top-right corner, click **New Component** -> **Import from JSON**
 5. Upload [ditto-component-library\_\_base.json](src/ditto/ditto-component-library__base.json) and follow the prompts to finalize the import
-6. Repeat the import process with [ditto-component-library\_\_spanish.json](src/ditto/ditto-component-library__spanish.json) (found in this repository); **when prompted for a variant name, make sure to name your variant "Spanish"**
+6. Repeat the import process with [ditto-component-library\_\_spanish.json](src/ditto/ditto-component-library__spanish.json); **when prompted for a variant name, make sure to name your variant "Spanish"**
 
 You should now have a component library populated with components that have both base text and a variant.
 
