@@ -11,7 +11,7 @@ Dittobnb currently comes in two different flavors on two different branches:
 1. On [master](https://github.com/dittowords/ditto-demo/tree/master), Dittobnb is integrated with Ditto using [ditto-react](https://github.com/dittowords/ditto-react).
 2. On [react-i18next](https://github.com/dittowords/ditto-demo/tree/react-i18next), Dittobnb is integrated with Ditto using [react-i18next](https://react.i18next.com/).
 
-The instructions contained in the rest of thsi README will work independent of the client library used.
+The instructions contained in the rest of this README will work independent of the client library used.
 
 Is there another library/framework that you think we should create a demo for? Let us know by [opening an issue](https://github.com/dittowords/ditto-demo/issues/new), or feel free to open a pull request!
 
