@@ -4,6 +4,17 @@ Dittbnb is a small web app designed to serve as an example of how Ditto's develo
 
 ![image](https://user-images.githubusercontent.com/13909354/112368768-aa98f280-8c98-11eb-934e-deba171bb5f0.png)
 
+## Flavors
+
+Dittobnb currently comes in two different flavors on two different branches:
+
+1. On [master](https://github.com/dittowords/ditto-demo/tree/master), Dittobnb is integrated with Ditto using [ditto-react](https://github.com/dittowords/ditto-react).
+2. On [react-i18next](https://github.com/dittowords/ditto-demo/tree/react-i18next), Dittobnb is integrated with Ditto using [react-i18next](https://react.i18next.com/).
+
+The instructions contained in the rest of thsi README will work independent of the client library used.
+
+Is there another library/framework that you think we should create a demo for? Let us know by [opening an issue](https://github.com/dittowords/ditto-demo/issues/new), or feel free to open a pull request!
+
 ## Connecting the example app to your workspace
 
 In just a few minutes, you can have a local instance of Dittobnb fully synced up with your own Ditto account.
