@@ -1,4 +1,6 @@
 module.exports = {
-  "base": require('./base.json'),
-  "spanish": require('./spanish.json')
+  "ditto_component_library": {
+    "base": require('./ditto-component-library__base.json'),
+    "spanish": require('./ditto-component-library__spanish.json')
+  }
 }
