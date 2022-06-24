@@ -53,5 +53,9 @@
   "nav.link.activities": "Experiencias",
   "nav.link.become-a-host": "Hazte anfitrión",
   "nav.link.online-experiences": "Experiencias en línea",
-  "nav.link.places-to-stay": "Lugares para hospedarte"
+  "nav.link.places-to-stay": "Lugares para hospedarte",
+  "mobile.navbar.activities": "Experiencias",
+  "mobile.navbar.host": "Anfitrión",
+  "mobile.navbar.online": "En Línea",
+  "mobile.navbar.places": "Lugares"
 }
