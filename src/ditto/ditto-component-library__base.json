@@ -53,5 +53,9 @@
   "nav.link.activities": "Activities",
   "nav.link.become-a-host": "Become a host",
   "nav.link.online-experiences": "Online Experiences",
-  "nav.link.places-to-stay": "Places to Stay"
+  "nav.link.places-to-stay": "Places to Stay",
+  "mobile.navbar.activities": "Activities",
+  "mobile.navbar.host": "Host",
+  "mobile.navbar.online": "Online",
+  "mobile.navbar.places": "Places"
 }
