@@ -1,5 +1,5 @@
-projects:
-  - name: Ditto Component Library
-    id: ditto_component_library
+sources:
+  components:
+    enabled: true
 variants: true
 format: flat
