@@ -22,8 +22,8 @@ In just a few minutes, you can have a local instance of Dittobnb fully synced up
 ### 🛠 Initial setup
 
 1. Clone the repository
-2. Install dependencies `npm install`
-3. Start the web app `npm start`
+2. Install dependencies `yarn install`
+3. Start the web app `yarn start`
 
 ### 🗂 Populating your component library
 
