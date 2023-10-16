@@ -1,35 +1,31 @@
-import { DittoComponent } from "ditto-react";
 import { useContext } from "react";
 import { useLocation } from "wouter";
 import { AppContext } from "../App";
+import { useTranslation } from "react-i18next";
 
 function VerificationCode() {
   const [, setLocation] = useLocation();
+  const { t } = useTranslation();
 
   const appData = useContext(AppContext);
 
   return (
     <>
-      <h1>
-        <DittoComponent componentId="onboarding.phone-number-verification.header-sample" />
-      </h1>
+      <h1>{t("onboarding.phone-number-verification.header-sample")}</h1>
       <p className="title-info">
-        <DittoComponent
-          componentId="onboarding.phone-number-verification.hint-text-sample"
-          variables={{
-            userPhoneNumber: appData.phoneNumber,
-            verificationCodeExpiration: 5,
-          }}
-        />
+        {t("onboarding.phone-number-verification.hint-text-sample", {
+          userPhoneNumber: appData.phoneNumber,
+          verificationCodeExpiration: 5,
+        })}
       </p>
       <form>
         <input type="text" placeholder="XXXXXX" />
         <p className="didnt-receive-it">
           <span>
-            <DittoComponent componentId="onboarding.phone-number-verification.didnt-receive-sample" />
+            {t("onboarding.phone-number-verification.didnt-receive-sample")}
           </span>
           <a href="/">
-            <DittoComponent componentId="onboarding.phone-number-verification.resend-sample" />
+            {t("onboarding.phone-number-verification.resend-sample")}
           </a>
         </p>
       </form>
@@ -39,7 +35,7 @@ function VerificationCode() {
             setLocation("/bank-linking");
           }}
         >
-          <DittoComponent componentId="onboarding.cta.next-sample" />
+          {t("onboarding.cta.next-sample")}
         </button>
         <p
           className="back"
@@ -47,7 +43,7 @@ function VerificationCode() {
             setLocation("/phone-number");
           }}
         >
-          <DittoComponent componentId="onboarding.cta.back-sample" />
+          {t("onboarding.cta.back-sample")}
         </p>
       </div>
     </>

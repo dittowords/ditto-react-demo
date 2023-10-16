@@ -1,23 +1,25 @@
-import { DittoComponent } from "ditto-react";
 import { useContext } from "react";
 import { useLocation } from "wouter";
 import { AppContext } from "../App";
+import { useTranslation } from "react-i18next";
 
 function TellUsAboutYou() {
   const [, setLocation] = useLocation();
+  const { t } = useTranslation();
+
   const appData = useContext(AppContext);
 
   return (
     <>
       <h1>
-        <DittoComponent componentId="onboarding.profile.header-sample" />
+        {t("onboarding.profile.header-sample")}
       </h1>
       <p className="title-info">
-        <DittoComponent componentId="onboarding.profile.id-disclaimer-sample" />
+        {t("onboarding.profile.id-disclaimer-sample")}
       </p>
       <form>
         <label>
-          <DittoComponent componentId="input.first-name.label-sample" />
+          {t("input.first-name.label-sample")}
         </label>
         <input
           type="text"
@@ -27,21 +29,21 @@ function TellUsAboutYou() {
           }}
         />
         <label>
-          <DittoComponent componentId="input.middle-name.label-sample" />
+          {t("input.middle-name.label-sample")}
         </label>
         <p className="label-info">
-          <DittoComponent componentId="input.middle-name.helper-text-sample" />
+          {t("input.middle-name.helper-text-sample")}
         </p>
         <input type="text" />
         <label>
-          <DittoComponent componentId="input.last-name.label-sample" />
+          {t("input.last-name.label-sample")}
         </label>
         <input type="text" />
         <label>
-          <DittoComponent componentId="input.birthday.label-sample" />
+          {t("input.birthday.label-sample")}
         </label>
         <p className="label-info">
-          <DittoComponent componentId="input.birthday.helper-text-sample" />
+          {t("input.birthday.helper-text-sample")}
         </p>
         <input type="text" placeholder="MM/DD/YYYY" />
       </form>
@@ -52,11 +54,11 @@ function TellUsAboutYou() {
             setLocation("/a-few-more-questions");
           }}
         >
-          <DittoComponent componentId="onboarding.cta.next-sample" />
+          {t("onboarding.cta.next-sample")}
         </button>
         <p className="login-signup-text">
           <span>
-            <DittoComponent componentId="onboarding.sign-up.login-message-sample" />
+            {t("onboarding.sign-up.login-message-sample")}
           </span>
           <a href="/login">Login</a>
         </p>

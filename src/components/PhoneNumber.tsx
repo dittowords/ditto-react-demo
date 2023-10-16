@@ -1,24 +1,22 @@
-import { DittoComponent } from "ditto-react";
 import { useContext } from "react";
 import { useLocation } from "wouter";
 import { AppContext } from "../App";
+import { useTranslation } from "react-i18next";
 
 function PhoneNumber() {
   const [, setLocation] = useLocation();
+  const { t } = useTranslation();
 
   const appData = useContext(AppContext);
 
   return (
     <>
       <h1>
-        <DittoComponent
-          componentId="onboarding.enter-phone-number.header-sample"
-          variables={{ userName: appData.firstName }}
-        />
+        {t("onboarding.enter-phone-number.header-sample", {
+          userName: appData.firstName,
+        })}
       </h1>
-      <p className="title-info">
-        <DittoComponent componentId="onboarding.phone-number.h2-sample" />
-      </p>
+      <p className="title-info">{t("onboarding.phone-number.h2-sample")}</p>
       <form>
         <input
           type="text"
@@ -42,7 +40,7 @@ function PhoneNumber() {
             !appData.phoneNumber.includes("-")
           }
         >
-          <DittoComponent componentId="onboarding.cta.next-sample" />
+          {t("onboarding.cta.next-sample")}
         </button>
         <p
           className="back"
@@ -50,7 +48,7 @@ function PhoneNumber() {
             setLocation("/a-few-more-questions");
           }}
         >
-          <DittoComponent componentId="onboarding.cta.back-sample" />
+          {t("onboarding.cta.back-sample")}
         </p>
       </div>
     </>

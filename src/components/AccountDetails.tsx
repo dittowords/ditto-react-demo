@@ -1,28 +1,30 @@
-import { DittoComponent } from "ditto-react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "wouter";
 
 function AccountDetails() {
   const [, setLocation] = useLocation();
 
+  const { t } = useTranslation();
+
   return (
     <>
       <h1>
-        <DittoComponent componentId="onboarding.account-details.header-sample" />
+        {t("onboarding.account-details.header-sample")}
       </h1>
       <p className="title-info">
-        <DittoComponent componentId="onboarding.account-details.hint-text-sample" />
+        {t("onboarding.account-details.hint-text-sample")}
       </p>
       <form>
         <label>
-          <DittoComponent componentId="input.email.label-sample" />
+          {t("input.email.label-sample")}
         </label>
         <input type="text" placeholder="name@company.com" />
         <label>
-          <DittoComponent componentId="input.password.label-sample" />
+          {t("input.password.label-sample")}
         </label>
         <input type="text" className="hide-text" placeholder="**************" />
         <label>
-          <DittoComponent componentId="input.confirm-password.label-sample" />
+          {t("input.confirm-password.label-sample")}
         </label>
         <input type="text" className="hide-text" placeholder="**************" />
       </form>
@@ -32,7 +34,7 @@ function AccountDetails() {
             setLocation("/");
           }}
         >
-          <DittoComponent componentId="onboarding.sign-up.cta-sample" />
+          {t("onboarding.sign-up.cta-sample")}
         </button>
         <p
           className="back"
@@ -40,7 +42,7 @@ function AccountDetails() {
             setLocation("bank-linking");
           }}
         >
-          <DittoComponent componentId="onboarding.cta.back-sample" />
+          {t("onboarding.cta.back-sample")}
         </p>
       </div>
       <p className="login-signup-text">

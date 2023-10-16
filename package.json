@@ -11,9 +11,10 @@
     "sync": "cd src && ditto-cli pull"
   },
   "dependencies": {
-    "ditto-react": "^1.5.0",
+    "i18next": "^23.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^13.3.0",
     "wouter": "^2.12.0"
   },
   "devDependencies": {

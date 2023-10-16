@@ -1,4 +1,4 @@
-import { DittoComponent } from "ditto-react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "wouter";
 
 function ShieldSvg() {
@@ -20,39 +20,25 @@ function ShieldSvg() {
 
 function BankLinking() {
   const [, setLocation] = useLocation();
+  const { t } = useTranslation();
 
   return (
     <>
-      <h1>
-        <DittoComponent componentId="onboarding.link-bank.header-sample" />
-      </h1>
-      <p className="title-info">
-        <DittoComponent componentId="onboarding.link-bank.h2-sample" />
-      </p>
+      <h1>{t("onboarding.link-bank.header-sample")}</h1>
+      <p className="title-info">{t("onboarding.link-bank.h2-sample")}</p>
       <form>
-        <label>
-          <DittoComponent componentId="cards.label.card-number-sample" />
-        </label>
+        <label>{t("cards.label.card-number-sample")}</label>
         <input type="text" />
-        <label>
-          <DittoComponent componentId="cards.label.expiration-sample" />
-        </label>
+        <label>{t("cards.label.expiration-sample")}</label>
         <input type="text" placeholder="MM/YY" />
-        <label>
-          <DittoComponent componentId="input.cvv.label-sample" />
-        </label>
+        <label>{t("input.cvv.label-sample")}</label>
         <input type="text" className="hide-text" placeholder="***" />
-        <label>
-          <DittoComponent componentId="input.zip-code.label-sample" />
-        </label>
+        <label>{t("input.zip-code.label-sample")}</label>
         <input type="text" />
         <p className="bank-details-info">
           <ShieldSvg />
           <span>
-            <DittoComponent
-              componentId="onboarding.link-bank.disclaimer-sample"
-              variables={{ nmlsId: 551219 }}
-            />
+            {t("onboarding.link-bank.disclaimer-sample", { nmlsId: 551219 })}
           </span>
         </p>
       </form>
@@ -64,7 +50,7 @@ function BankLinking() {
               setLocation("/account-details");
             }}
           >
-            <DittoComponent componentId="onboarding.cta.skip-sample" />
+            {t("onboarding.cta.skip-sample")}
           </button>
           <button
             className="next-button"
@@ -72,7 +58,7 @@ function BankLinking() {
               setLocation("/account-details");
             }}
           >
-            <DittoComponent componentId="onboarding.cta.next-sample" />
+            {t("onboarding.cta.next-sample")}
           </button>
         </div>
         <p
@@ -81,7 +67,7 @@ function BankLinking() {
             setLocation("/verification-code");
           }}
         >
-          <DittoComponent componentId="onboarding.cta.back-sample" />
+          {t("onboarding.cta.back-sample")}
         </p>
       </div>
     </>

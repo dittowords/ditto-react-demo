@@ -1,5 +1,5 @@
-import { Ditto, DittoComponent } from "ditto-react";
 import { useLocation } from "wouter";
+import { useTranslation } from "react-i18next";
 
 function InfoBadge() {
   return (
@@ -20,26 +20,27 @@ function InfoBadge() {
 
 function AFewMoreQuestions() {
   const [, setLocation] = useLocation();
+  const { t } = useTranslation()
 
   return (
     <>
       <h1>
-        <DittoComponent componentId="onboarding.confirm-identity.header-sample" />
+        {t("onboarding.confirm-identity.header-sample")}
       </h1>
       <div className="info-box">
         <p className="info-box-title">
           <InfoBadge />
           <span>
-            <DittoComponent componentId="onboarding.information-disclaimer.header-sample" />
+            {t("onboarding.information-disclaimer.header-sample")}
           </span>
         </p>
         <p className="info-box-content">
-          <DittoComponent componentId="onboarding.information-disclaimer.description-sample" />
+          {t("onboarding.information-disclaimer.description-sample")}
         </p>
       </div>
       <form>
         <label>
-          <DittoComponent componentId="input.country-of-residence.label-sample" />
+          {t("input.country-of-residence.label-sample")}
         </label>
         <select>
           <option value="Afghanistan">Afghanistan</option>
@@ -332,10 +333,10 @@ function AFewMoreQuestions() {
           <option value="Zimbabwe">Zimbabwe</option>
         </select>
         <label>
-          <DittoComponent componentId="input.last-4-ssn.label-sample" />
+          {t("input.last-4-ssn.label-sample")}
         </label>
         <p className="label-info">
-          <DittoComponent componentId="input.confirm-identity.helper-text-sample" />
+          {t("input.confirm-identity.helper-text-sample")}
         </p>
         <input type="text" className="hide-text" placeholder="XXXX" />
       </form>
@@ -345,7 +346,7 @@ function AFewMoreQuestions() {
             setLocation("/phone-number");
           }}
         >
-          <DittoComponent componentId="onboarding.cta.next-sample" />
+          {t("onboarding.cta.next-sample")}
         </button>
         <p
           className="back"
@@ -353,7 +354,7 @@ function AFewMoreQuestions() {
             setLocation("/");
           }}
         >
-          <DittoComponent componentId="onboarding.cta.back-sample" />
+          {t("onboarding.cta.back-sample")}
         </p>
       </div>
     </>
