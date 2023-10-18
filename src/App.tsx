@@ -25,27 +25,38 @@ function App() {
   const [location] = useLocation();
   const [firstName, setFirstName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
+  const [variant, setVariant] = useState("base");
 
   const onLoginPage = location.includes("login");
 
   return (
-    <DittoProvider source={source} variant="base">
-      <AppContext.Provider
-        value={{ firstName, setFirstName, phoneNumber, setPhoneNumber }}
+    <>
+      <button
+        className="toggle-variant"
+        onClick={() => {
+          setVariant(variant === "base" ? "portuguese---br-sample" : "base");
+        }}
       >
-        <img
-          className={onLoginPage ? "ditto-login-logo" : "ditto-logo"}
-          src={dittoPay}
-        />
-        <Route path="/" component={TellUsAboutYou} />
-        <Route path="/a-few-more-questions" component={AFewMoreQuestions} />
-        <Route path="/phone-number" component={PhoneNumber} />
-        <Route path="/verification-code" component={VerificationCode} />
-        <Route path="/bank-linking" component={BankLinking} />
-        <Route path="/account-details" component={AccountDetails} />
-        <Route path="/login" component={Login} />
-      </AppContext.Provider>
-    </DittoProvider>
+        Switch to {variant === "base" ? "Portuguese" : "English"}
+      </button>
+      <DittoProvider source={source} variant={variant}>
+        <AppContext.Provider
+          value={{ firstName, setFirstName, phoneNumber, setPhoneNumber }}
+        >
+          <img
+            className={onLoginPage ? "ditto-login-logo" : "ditto-logo"}
+            src={dittoPay}
+          />
+          <Route path="/" component={TellUsAboutYou} />
+          <Route path="/a-few-more-questions" component={AFewMoreQuestions} />
+          <Route path="/phone-number" component={PhoneNumber} />
+          <Route path="/verification-code" component={VerificationCode} />
+          <Route path="/bank-linking" component={BankLinking} />
+          <Route path="/account-details" component={AccountDetails} />
+          <Route path="/login" component={Login} />
+        </AppContext.Provider>
+      </DittoProvider>
+    </>
   );
 }
 
