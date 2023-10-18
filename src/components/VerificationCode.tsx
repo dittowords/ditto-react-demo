@@ -3,6 +3,8 @@ import { useContext } from "react";
 import { useLocation } from "wouter";
 import { AppContext } from "../App";
 
+const EXPIRATION_MINUTES = 5;
+
 function VerificationCode() {
   const [, setLocation] = useLocation();
 
@@ -18,8 +20,9 @@ function VerificationCode() {
           componentId="onboarding.phone-number-verification.hint-text-sample"
           variables={{
             userPhoneNumber: appData.phoneNumber,
-            verificationCodeExpiration: 5,
+            verificationCodeExpiration: EXPIRATION_MINUTES,
           }}
+          count={EXPIRATION_MINUTES}
         />
       </p>
       <form>
