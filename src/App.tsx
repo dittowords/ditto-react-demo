@@ -31,14 +31,16 @@ function App() {
 
   return (
     <>
-      <button
+      <select
         className="toggle-variant"
-        onClick={() => {
+        onChange={() => {
           setVariant(variant === "base" ? "portuguese---br-sample" : "base");
         }}
       >
         Switch to {variant === "base" ? "Portuguese" : "English"}
-      </button>
+        <option value="base">English</option>
+        <option value="portuguese---br-sample">Portuguese</option>
+      </select>
       <DittoProvider source={source} variant={variant}>
         <AppContext.Provider
           value={{ firstName, setFirstName, phoneNumber, setPhoneNumber }}
