@@ -9,7 +9,7 @@ We also use the sample app to showcase how you can use Ditto’s developer integ
 - Componentization
 - Variable interpolation
 
-[ INSERT IMAGE OF APP ]
+![Screenshot of DittoPay]("https://raw.githubusercontent.com/dittowords/ditto-react-demo/4aad67af3997ffcce004b1e211d1c738c6bc3ca1/public/dittopay.png")
 
 We showcase this functionality with multiple frameworks:
 
