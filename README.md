@@ -1,79 +1,67 @@
-# Dittobnb
+# DittoPay — React Demo App
 
-Dittbnb is a small web app designed to serve as an example of how Ditto's developer tools can be integrated into a codebase.
+DittoPay is a small React app that corresponds with the sample project in your workspace. With this sample app, you can set up our developer integrations[TODO: LINK DEV DOCS] to sync text edits in just a few minutes**.**
 
-![image](https://user-images.githubusercontent.com/13909354/112368768-aa98f280-8c98-11eb-934e-deba171bb5f0.png)
+We also use the sample app to showcase how you can use Ditto’s developer integrations in a React environment for:
 
-## Flavors
+- Handling plurals
+- Translation / localization with Variants
+- Componentization
+- Variable interpolation
 
-Dittobnb currently comes in two different flavors on two different branches:
+[ INSERT IMAGE OF APP ]
 
-1. On [master](https://github.com/dittowords/ditto-demo/tree/master), Dittobnb is integrated with Ditto using [ditto-react](https://github.com/dittowords/ditto-react).
-2. On [react-i18next](https://github.com/dittowords/ditto-demo/tree/react-i18next), Dittobnb is integrated with Ditto using [react-i18next](https://react.i18next.com/).
+We showcase this functionality with multiple frameworks:
 
-The instructions contained in the rest of this README will work independent of the client library used. If you switch between the branches, make sure to re-run `yarn install` to ensure your installed dependencies remain up-to-date.
+- On [master](https://github.com/dittowords/ditto-demo/tree/master), DittoPay is integrated with Ditto **using [ditto-react](https://github.com/dittowords/ditto-react).**
+- On [react-i18next](https://github.com/dittowords/ditto-demo/tree/react-i18next), DittoPay is integrated with Ditto **using [react-i18next](https://react.i18next.com/).**
 
-Is there another library/framework that you think we should create a demo for? Let us know by [opening an issue](https://github.com/dittowords/ditto-demo/issues/new), or feel free to open a pull request!
+If you switch between the branches, make sure to re-run `npm install` to ensure your installed dependencies remain up-to-date.
 
-## Connecting the example app to your workspace
+## 1. Running the App 🛠
 
-In just a few minutes, you can have a local instance of Dittobnb fully synced up with your own Ditto account.
+To run the sample app locally:
 
-### 🛠 Initial setup
+1. Clone this repository
+2. `cd` into the repo and run `npm install`
+3. `npm run dev`
 
-1. Clone the repository
-2. Install dependencies `yarn install`
-3. Start the web app `yarn start`
+## 2. Setting up the Ditto CLI 🤖
 
-### 🗂 Populating your component library
+This repo is already set up with the string files and string IDs of the sample project in your workspace, as well as a [config for the CLI](https://github.com/dittowords/ditto-react-demo/blob/master/src/ditto/config.yml) to sync text from the DittoPay sample components for React.
 
-1. Sign in to your Ditto account
-2. Navigate to [your component library](https://beta.dittowords.com/components/all)
-3. Enable [Developer Mode](https://www.dittowords.com/docs/ditto-developer-mode) for your component library if it isn't enabled already
-4. In the top-right corner, click **New Component** -> **Import from JSON**
-5. Upload [ditto-component-library\_\_base.json](src/ditto/ditto-component-library__base.json) and follow the prompts to finalize the import
-6. Repeat the import process with [ditto-component-library\_\_spanish.json](src/ditto/ditto-component-library__spanish.json); **when prompted for a variant name, make sure to name your variant "Spanish"**
+This means all you have to do is install and authenticate to the CLI to have things be hooked up from end-to-end:
 
-You should now have a component library populated with components that have both base text and a variant.
+1. **Install the CLI:** In the root of the repository, run `npm install`. This will install all dependencies recorded in the [package.json](https://github.com/dittowords/ditto-react-demo/blob/master/package.json) file, where the latest version of the Ditto CLI is listed.
 
-### 🔐 Authenticating with the Ditto CLI
+2. **To authenticate, run the CLI:**
+   In this project, we’ve set up a simple [NPM script](https://docs.npmjs.com/cli/v10/using-npm/scripts) to enable using the Ditto CLI from any subdirectory, which you can view in the `scripts` property of the [package.json] (https://github.com/dittowords/ditto-react-demo/blob/master/package.json) file. You can always run the CLI directly using `npx` (see CLI docs[LINK]), but this setup reliable and is similar to one you might want in your own production environment.
 
-1. Sign in to your Ditto account
-2. Navigate to your [user settings page](https://beta.dittowords.com/account/user)
-3. Generate an API key by clicking the blue **Create Key +** button in the bottom section
-4. Copy the generated API key to your clipboard
-5. In your terminal, navigate to the root of your cloned `ditto-demo` instance
-6. Run `yarn sync`
+   You’ll be prompted to provide your API key if it’s your first time running the CLI
 
-If you didn't encounter any errors, your Ditto account and your Dittobnb project should now be connected.
+Note: you can view the CLI config at `/src/config.yml`:
 
-### 🖋 Making an example edit
+```jsx
+sources:
+  components:
+    folders:
+      - id: sample-components
+        name: Sample Components
+variants: true
+format: flat
+```
 
-1. Sign in to your Ditto account
-2. Navigate to your [component library](https://beta.dittowords.com/components/all)
-3. In the search input near the top of the screen, search for the text "Travel the world with your family"
-4. Select the component and, using the detail panel on the right side of the screen, change the text to "Go anywhere" and click **Save Edits**.
-5. In your terminal, navigate to the root of your cloned `ditto-demo` instance
-6. Run `yarn sync`
+## 3. Syncing Edits ✍️
 
-After the sync finishes, the running app should automatically reload to reflect the change made in Ditto!
+1. Make edits to DittoPay text in Ditto[TODO: Link Web-app]. You can make edits to the components connected in the DittoPay sample project itself, or to the sample components directly!
+2. Pull in the latest edits via the Ditto CLI:
 
-### 🖼 Syncing edits from designs (optional)
+   `npm run sync`
 
-To sync edits from design all the way to development, you can integrate your Ditto components with a design file. That way, you can also test out sample edits directly from your design file!
+## Feature Requests and Support
 
-1. Duplicate our corresponding [Dittobnb Figma file](https://www.figma.com/community/file/956627227087012313)
-2. Import the file as a new Ditto project via our [Figma plugin](https://www.figma.com/community/plugin/798826066406007173/%E2%9C%8D%EF%B8%8F-Ditto-%7C-collaborate-on-copy).
-3. Connect your component library to your Ditto project. You can do this quickly via our [Component Suggestions](https://www.dittowords.com/blog/introducing-component-suggestions)!
-4. Make an edit to text via our Figma plugin.
-5. Just like syncing edits made directly in your component library, navigate to the root of your cloned `ditto-demo` instance and run `yarn sync` to pull in edits made in Ditto.
+Is there another library/framework that you think we should create a demo for?
 
-## More Information
+Is there a Ditto feature you want an example for in React?
 
-For a high level walkthrough, check out our [Developer's Quick Guide to Integrating Ditto](https://www.dittowords.com/blog/a-developers-quick-guide-to-integrating-ditto).
-
-The companion Dittobnb Figma file can be found here: https://www.figma.com/community/file/956627227087012313
-
-For more information on what Ditto offers for developers, go to https://developer.dittowords.com.
-
-For our general help guides, go to https://www.dittowords.com/docs/introduction.
+Please let us know by opening an [issue](https://github.com/dittowords/ditto-react-demo/issues) or sending us an email!
