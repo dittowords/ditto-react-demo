@@ -27,11 +27,7 @@ function AccountDetails() {
         <input type="text" className="hide-text" placeholder="**************" />
       </form>
       <div className="bottom-cta">
-        <button
-          onClick={() => {
-            setLocation("/");
-          }}
-        >
+        <button>
           <DittoComponent componentId="onboarding.sign-up.cta-sample" />
         </button>
         <p

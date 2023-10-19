@@ -1,9 +1,6 @@
 import { DittoComponent } from "ditto-react";
-import { useLocation } from "wouter";
 
 function Login() {
-  const [, setLocation] = useLocation();
-
   return (
     <>
       <h1 className="login-title">Log in</h1>
@@ -21,13 +18,7 @@ function Login() {
         <DittoComponent componentId="onboarding.cta.forgot-password-sample" />
       </p>
       <div className="bottom-cta">
-        <button
-          onClick={() => {
-            setLocation("/");
-          }}
-        >
-          Log in
-        </button>
+        <button>Log in</button>
         <p className="login-signup-text">
           <span>
             <DittoComponent componentId="onboarding.log-in.sign-up-message-sample" />
