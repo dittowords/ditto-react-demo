@@ -3,6 +3,8 @@ import { useLocation } from "wouter";
 import { AppContext } from "../App";
 import { useTranslation } from "react-i18next";
 
+const EXPIRATION_MINUTES = 5;
+
 function VerificationCode() {
   const [, setLocation] = useLocation();
   const { t } = useTranslation();
@@ -16,6 +18,7 @@ function VerificationCode() {
         {t("onboarding.phone-number-verification.hint-text-sample", {
           userPhoneNumber: appData.phoneNumber,
           verificationCodeExpiration: 5,
+          count: EXPIRATION_MINUTES,
         })}
       </p>
       <form>

@@ -8,34 +8,20 @@ function AccountDetails() {
 
   return (
     <>
-      <h1>
-        {t("onboarding.account-details.header-sample")}
-      </h1>
+      <h1>{t("onboarding.account-details.header-sample")}</h1>
       <p className="title-info">
         {t("onboarding.account-details.hint-text-sample")}
       </p>
       <form>
-        <label>
-          {t("input.email.label-sample")}
-        </label>
+        <label>{t("input.email.label-sample")}</label>
         <input type="text" placeholder="name@company.com" />
-        <label>
-          {t("input.password.label-sample")}
-        </label>
+        <label>{t("input.password.label-sample")}</label>
         <input type="text" className="hide-text" placeholder="**************" />
-        <label>
-          {t("input.confirm-password.label-sample")}
-        </label>
+        <label>{t("input.confirm-password.label-sample")}</label>
         <input type="text" className="hide-text" placeholder="**************" />
       </form>
       <div className="bottom-cta">
-        <button
-          onClick={() => {
-            setLocation("/");
-          }}
-        >
-          {t("onboarding.sign-up.cta-sample")}
-        </button>
+        <button>{t("onboarding.sign-up.cta-sample")}</button>
         <p
           className="back"
           onClick={() => {
