@@ -53,7 +53,7 @@ format: flat
 
 ## 3. Syncing Edits ✍️
 
-1. Make edits to DittoPay text in Ditto ([link](https://app.dittowords.com/projects/sample)). You can make edits to the components connected in the DittoPay sample project itself, or to the sample components directly!
+1. Make edits to [DittoPay text in Ditto](https://app.dittowords.com/projects/sample). You can make edits to the components connected in the DittoPay sample project itself, or to the sample components directly!
 2. Pull in the latest edits via the Ditto CLI:
    `npm run ditto:pull`
 
