@@ -1,5 +1,7 @@
 sources:
   components:
-    enabled: true
+    folders:
+      - id: sample-components
+        name: Sample Components
 variants: true
 format: flat

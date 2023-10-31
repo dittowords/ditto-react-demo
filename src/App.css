@@ -1,0 +1,274 @@
+#root {
+  width: 335px;
+  margin: 0 auto;
+  padding: 45px 50px;
+  background-color: white;
+  box-shadow: 0px 4px 36px 0px rgba(83, 103, 227, 0.1);
+  border-radius: 10px;
+}
+
+.toggle-variant {
+  position: absolute;
+  top: 45px;
+  right: 55px;
+  border-radius: 4px;
+  width: auto;
+  padding: 2px;
+  background-color: white;
+  box-shadow: 0px 4px 36px 0px rgba(83, 103, 227, 0.1);
+  font-size: 16px;
+  border: #121212 solid 1px;
+}
+
+.ditto-logo {
+  width: 126px;
+  position: absolute;
+  top: 55px;
+  left: 55px;
+}
+
+.ditto-login-logo {
+  width: 126px;
+  position: absolute;
+  top: 55px;
+  left: 55px;
+}
+
+h1 {
+  margin: 0 0 6px 0;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.title-info {
+  margin-bottom: 14px;
+}
+
+p {
+  color: #858585;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  margin: 0;
+  line-height: 20px;
+}
+
+label {
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  margin-bottom: 4px;
+}
+
+.label-info {
+  margin-bottom: 4px;
+}
+
+input {
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background: #f7f8fd;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #121212;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+select {
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background: #f7f8fd;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #121212;
+  font-size: 13px;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 1000px;
+  background: #4f46e5;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.36px;
+  border: none;
+  width: 100%;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.login-signup-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  color: #a1a1a1;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.login-signup-text a {
+  text-decoration: none;
+  color: #4f46e5;
+  margin-left: 4px;
+}
+
+.back {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  color: #a1a1a1;
+  text-align: center;
+  margin-top: 14px;
+}
+
+.info-box {
+  padding: 16px;
+  border-radius: 8px;
+  background: #f7f8fd;
+  margin-top: 8px;
+  margin-bottom: 14px;
+}
+
+.info-box-title {
+  color: #344055;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.info-box-title svg {
+  vertical-align: bottom;
+  margin-right: 4px;
+}
+
+.info-box-content {
+  color: #344055;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.didnt-receive-it {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  color: #a1a1a1;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.didnt-receive-it a {
+  text-decoration: none;
+  color: #4f46e5;
+  margin-left: 4px;
+}
+
+.bank-details-info {
+  display: flex;
+  justify-content: center;
+}
+
+.bank-details-info svg {
+  height: 58px;
+  width: 21px;
+  margin-right: 10px;
+  margin-bottom: 16px;
+}
+
+.bank-details-info span {
+  width: 314px;
+}
+
+.bank-linking-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bank-linking-buttons button {
+  width: 48%;
+}
+
+.skip-button {
+  background-color: white;
+  color: #4f46e5;
+  border: 1px solid #4f46e5;
+}
+
+.login-title {
+  margin-bottom: 25px;
+}
+
+.forgot-password {
+  text-align: right;
+  color: #4f46e5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.hide-text {
+  -webkit-text-security: disc;
+}
+
+@media (max-width: 870px) {
+  #root {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    min-height: 100vh;
+    padding: 57px 25px;
+  }
+
+  .ditto-logo {
+    position: static;
+    margin-bottom: 25px;
+  }
+
+  .ditto-login-logo {
+    display: block;
+    position: static;
+    margin-bottom: 25px;
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .bottom-cta {
+    position: absolute;
+    bottom: 25px;
+    width: 340px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+}
