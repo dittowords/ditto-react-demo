@@ -1,6 +1,6 @@
 # DittoPay — React Demo App
 
-DittoPay is a small React app that corresponds with the sample project in your workspace. With this sample app, you can set up our [developer integrations ](https://developer.dittowords.com) to sync text edits in just a few minutes.
+DittoPay is a small React app that corresponds with the sample project in your workspace. With this sample app, you can set up our [developer integrations](https://developer.dittowords.com) to sync text edits in just a few minutes.
 
 We also use the sample app to showcase how you can use Ditto’s developer integrations in a React environment for:
 
