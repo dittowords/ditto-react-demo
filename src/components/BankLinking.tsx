@@ -38,7 +38,7 @@ function BankLinking() {
         <p className="bank-details-info">
           <ShieldSvg />
           <span>
-            {t("onboarding.link-bank.disclaimer-sample", { nmlsId: 551219 })}
+            {t("onboarding.link-bank.disclaimer-sample", { nmlsIdSample: 551219 })}
           </span>
         </p>
       </form>

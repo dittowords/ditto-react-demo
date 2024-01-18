@@ -16,8 +16,8 @@ function VerificationCode() {
       <h1>{t("onboarding.phone-number-verification.header-sample")}</h1>
       <p className="title-info">
         {t("onboarding.phone-number-verification.hint-text-sample", {
-          userPhoneNumber: appData.phoneNumber,
-          verificationCodeExpiration: 5,
+          userPhoneNumberSample: appData.phoneNumber,
+          verificationCodeExpirationSample: 5,
           count: EXPIRATION_MINUTES,
         })}
       </p>

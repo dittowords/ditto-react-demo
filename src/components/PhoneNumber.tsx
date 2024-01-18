@@ -13,7 +13,7 @@ function PhoneNumber() {
     <>
       <h1>
         {t("onboarding.enter-phone-number.header-sample", {
-          userName: appData.firstName,
+          userNameSample: appData.firstName,
         })}
       </h1>
       <p className="title-info">{t("onboarding.phone-number.h2-sample")}</p>
