@@ -19,8 +19,8 @@ function VerificationCode() {
         <DittoComponent
           componentId="onboarding.phone-number-verification.hint-text-sample"
           variables={{
-            userPhoneNumber: appData.phoneNumber,
-            verificationCodeExpiration: EXPIRATION_MINUTES,
+            userPhoneNumberSample: appData.phoneNumber,
+            verificationCodeExpirationSample: EXPIRATION_MINUTES,
           }}
           count={EXPIRATION_MINUTES}
         />

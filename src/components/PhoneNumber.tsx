@@ -13,7 +13,7 @@ function PhoneNumber() {
       <h1>
         <DittoComponent
           componentId="onboarding.enter-phone-number.header-sample"
-          variables={{ userName: appData.firstName }}
+          variables={{ userNameSample: appData.firstName }}
         />
       </h1>
       <p className="title-info">
