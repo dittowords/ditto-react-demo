@@ -51,7 +51,7 @@ function BankLinking() {
           <span>
             <DittoComponent
               componentId="onboarding.link-bank.disclaimer-sample"
-              variables={{ nmlsId: 551219 }}
+              variables={{ nmlsIdSample: 551219 }}
             />
           </span>
         </p>
