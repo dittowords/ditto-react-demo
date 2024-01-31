@@ -1,5 +1,6 @@
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { useLocation } from "wouter";
+import { dittoVariableLink } from "../ditto/helpers";
 
 function AccountDetails() {
   const [, setLocation] = useLocation();
@@ -32,9 +33,12 @@ function AccountDetails() {
         </p>
       </div>
       <p className="login-signup-text">
-        {/* TODO: Replace with DittoComponent with link */}
-        <span>By signing up, you agree to our </span>
-        <a href="/">Terms and Conditions</a>
+        <Trans
+          i18nKey="onboarding.sign-up.disclaimer-sample"
+          components={{
+            1: <a href={dittoVariableLink("termsAndConditionsLinkSample")} />,
+          }}
+        />
       </p>
     </>
   );

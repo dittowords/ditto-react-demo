@@ -1,0 +1,19 @@
+{
+  "nmlsIdSample": {
+    "example": "004532"
+  },
+  "termsAndConditionsLinkSample": {
+    "text": "Terms and Conditions",
+    "url": "https://termsandconditions.com"
+  },
+  "userNameSample": {
+    "example": "Lily",
+    "fallback": "there"
+  },
+  "userPhoneNumberSample": {
+    "example": "(555) 555-555"
+  },
+  "verificationCodeExpirationSample": {
+    "example": "10"
+  }
+}
