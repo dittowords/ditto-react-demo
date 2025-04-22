@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "ditto:pull": "cd src && ditto-cli pull --sample-data && npx tsx ../ditto-helpers/fetchVariables.ts"
+    "ditto:pull": "ditto-cli pull -c ./src/ditto/config.yml"
   },
   "dependencies": {
     "@types/js-yaml": "^4.0.9",
@@ -19,7 +19,7 @@
     "wouter": "^2.12.0"
   },
   "devDependencies": {
-    "@dittowords/cli": "^4.4.0",
+    "@dittowords/cli": "^5.0.0-beta.4",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",

@@ -1,7 +1,7 @@
-sources:
-  components:
-    folders:
-      - id: sample-components
-        name: Sample Components
-variants: true
-format: flat
+projects: [{ id: "replace-with-your-project-id-here" }]
+variants: [{ id: "base" }, { id: "french" }]
+outDir: "./src/ditto"
+outputs:
+  - format: json
+    framework: i18next
+    type: module

@@ -48,12 +48,12 @@ function App() {
       <select
         className="toggle-variant"
         onChange={() => {
-          setVariant(variant === "base" ? "portuguese---br-sample" : "base");
+          setVariant(variant === "base" ? "french" : "base");
         }}
       >
-        Switch to {variant === "base" ? "Portuguese" : "English"}
+        Switch to {variant === "base" ? "French" : "English"}
         <option value="base">English</option>
-        <option value="portuguese---br-sample">Portuguese</option>
+        <option value="french">French</option>
       </select>
       <AppContext.Provider
         value={{ firstName, setFirstName, phoneNumber, setPhoneNumber }}

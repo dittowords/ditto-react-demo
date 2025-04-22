@@ -8,8 +8,8 @@ export const localeOptions = [
     value: "base",
   },
   {
-    label: "Portuguese",
-    value: "portuguese---br-sample",
+    label: "French",
+    value: "french",
   },
 ];
 
@@ -17,7 +17,7 @@ async function init() {
   const resources: any = {};
   for (const localeOption of localeOptions) {
     resources[localeOption.value] = {
-      translation: source["ditto_component_library"][localeOption.value],
+      translation: source[localeOption.value],
     };
   }
 
