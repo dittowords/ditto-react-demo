@@ -21,7 +21,7 @@ To run the sample app locally:
 2. `cd` into the repo and run `npm install`
 3. `npm run dev`
 
-**Note:** This demo showcases the integration pattern between Ditto and react-i18next. To see it working with your own content, connect your Ditto workspace using the [CLI configuration](https://developer.dittowords.com/cli-reference/authentication) and replace the sample strings in `src/ditto` with your own project's strings.
+**Note:** This demo showcases the integration pattern between Ditto and react-i18next. To see it working with your own content, connect your Ditto workspace by updating the CLI configuration in `src/ditto/config.yml`.
 
 ## Using Ditto with react-i18next Hooks 🪝
 
