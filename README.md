@@ -14,7 +14,6 @@ The hook examples in this demo work identically in Next.js applications. However
 The `useTranslation` hook and all i18next features work the same way regardless of which approach you use.
 
 ## Running the App 🛠
-Note: This section is a WIP. Running locally may not work.
 
 To run the sample app locally:
 
