@@ -48,12 +48,18 @@ function App() {
       <select
         className="toggle-variant"
         onChange={() => {
-          setVariant(variant === "base" ? "french" : "base");
+          setVariant(variant === "base" ? "portuguesebr" : "base");
+          // setVariant(variant === "base" ? "french" : "base");
+          // setVariant(variant === "base" ? "spanish" : "base");
         }}
       >
-        Switch to {variant === "base" ? "French" : "English"}
+        {/* Switch to {variant === "base" ? "Portuguese (BR)" : "English"} */}
+        {/* Switch to {variant === "base" ? "French" : "English"}  */}
+        {/* Switch to {variant === "base" ? "Spanish" : "English"} */}
         <option value="base">English</option>
-        <option value="french">French</option>
+        <option value="portuguesebr">Portuguese (BR) Test</option>
+        {/* <option value="portuguese-br">French</option> */}
+        {/* <option value="spanish">Spanish</option> */}
       </select>
       <AppContext.Provider
         value={{ firstName, setFirstName, phoneNumber, setPhoneNumber }}

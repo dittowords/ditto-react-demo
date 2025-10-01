@@ -1,5 +1,5 @@
-projects: [{ id: "replace-with-your-project-id-here" }]
-variants: [{ id: "base" }, { id: "french" }]
+projects: [{ id: "dittopay-signup-flow-ns" }]
+variants: [{ id: "base" }, { id: "portuguesebr" }, { id: "french" }, { id: "spanish" }]
 outDir: "./src/ditto"
 outputs:
   - format: json

@@ -8,12 +8,21 @@ export const localeOptions = [
     value: "base",
   },
   {
+    label: "Portuguese (BR)",
+    value: "portuguesebr",
+  },
+  {
     label: "French",
     value: "french",
   },
+  {
+    label: "Spanish",
+    value: "spanish",
+  }
 ];
 
 async function init() {
+  console.log('----localeOptions', localeOptions);
   const resources: any = {};
   for (const localeOption of localeOptions) {
     resources[localeOption.value] = {
@@ -26,6 +35,8 @@ async function init() {
     debug: true,
     resources,
   });
+
+  console.log(resources)
 }
 
 init();

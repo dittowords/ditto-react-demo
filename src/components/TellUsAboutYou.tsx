@@ -12,14 +12,14 @@ function TellUsAboutYou() {
   return (
     <>
       <h1>
-        {t("onboarding.profile.header-sample")}
+        {t("lets-get-set-up")}
       </h1>
       <p className="title-info">
-        {t("onboarding.profile.id-disclaimer-sample")}
+        {t("please-enter-your-info-exactly-as-it-appears-on-your-id")}
       </p>
       <form>
         <label>
-          {t("input.first-name.label-sample")}
+          {t("first-name-1")}
         </label>
         <input
           type="text"
@@ -29,21 +29,21 @@ function TellUsAboutYou() {
           }}
         />
         <label>
-          {t("input.middle-name.label-sample")}
+          {t("middle-name")}
         </label>
         <p className="label-info">
-          {t("input.middle-name.helper-text-sample")}
+          {t("only-fill-this-out-if-its-shown-on-your-id.")}
         </p>
         <input type="text" />
         <label>
-          {t("input.last-name.label-sample")}
+          {t("last-name-1")}
         </label>
         <input type="text" />
         <label>
-          {t("input.birthday.label-sample")}
+          {t("date-of-birth")}
         </label>
         <p className="label-info">
-          {t("input.birthday.helper-text-sample")}
+          {t("you-must-to-be-18-or-older.")}
         </p>
         <input type="text" placeholder="MM/DD/YYYY" />
       </form>
@@ -54,11 +54,11 @@ function TellUsAboutYou() {
             setLocation("/a-few-more-questions");
           }}
         >
-          {t("onboarding.cta.next-sample")}
+          {t("next-2")}
         </button>
         <p className="login-signup-text">
           <span>
-            {t("onboarding.sign-up.login-message-sample")}
+            {t("already-have-an-account")}
           </span>
           <a href="/login">Login</a>
         </p>
